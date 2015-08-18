@@ -1,0 +1,143 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tevolution-LocationManager\n"
+"POT-Creation-Date: 2014-08-20 11:31+0530\n"
+"PO-Revision-Date: 2014-08-20 11:31+0530\n"
+"Last-Translator: \n"
+"Language-Team: Templatic <upendra@templatic.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: D:\\wamp\\www\\translationtesting\\wp-content\\plugins"
+"\\Tevolution-LocationManager\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e\n"
+"X-Poedit-SearchPath-0: D:\\wamp\\www\\translationtesting\\wp-content\\plugins"
+"\\Tevolution-LocationManager\n"
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/google_map_widget.php:89
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/map/map-shortcodes/city_map_shortcode.php:137
+msgid ""
+"<p>Your selected category do not have any records yet at your current "
+"location.</p>"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/google_map_widget.php:93
+msgid "Title or Keyword"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:419
+msgid "Select a city"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:23
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1655
+msgid "Loading..."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:25
+msgid "Default City"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:415
+msgid "Multi City"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:547
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:612
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:731
+msgid "Select City"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:549
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:614
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:733
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:933
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:977
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1040
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1199
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1232
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1280
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1404
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1439
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1488
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:103
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:220
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:315
+msgid "All Cities"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:583
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:694
+msgid "Select State"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:585
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:696
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:956
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1019
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1217
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1265
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1424
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1473
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:88
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:205
+msgid "All Regions"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:665
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:667
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1001
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1250
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1459
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:74
+msgid "Select Country"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:930
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:974
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1037
+msgid "City"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:953
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1016
+msgid "State"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:998
+msgid "Countries"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1186
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1393
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1653
+msgid "Location"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1296
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1504
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1551
+msgid "My Nearest City"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1683
+msgid "Please wait, We are taking you to your nearest city."
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1709
+msgid "Categories"
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/map/locations_map.php:243
+msgid ""
+"Clicking the above \"Set Address on Map\" button, you can simply drag the "
+"pinpoint to locate the exact address on the map. "
+msgstr ""
+
+#: D:\wamp\www\translationtesting\wp-content\plugins\Tevolution-LocationManager/functions/map/map-shortcodes/map-shortcodes.php:89
+msgid "Pinpoint"
+msgstr ""

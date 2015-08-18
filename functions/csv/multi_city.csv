@@ -1,0 +1,4 @@
+City Id,Country Id,Zones Id,City Name,City Slug,Latitude,Longitude,Scall Factor,Is Zoom Home,Map Type,Post Type,Category ids,Is Default,Message,Color,Image,header color,header image
+1,226,3713,New York,new-york,40.714321,-74.00579,13,,ROADMAP,"event,listing",,1, ,,,,
+2,226,3721,Philadelphia,philadelphia,39.952473,-75.164106,13,,ROADMAP,"event,listing",,0, ,,,,
+3,226,3709,San Francisco,san-francisco,37.774936,-122.4194229,13,,ROADMAP,"event,listing",,0, ,,,,

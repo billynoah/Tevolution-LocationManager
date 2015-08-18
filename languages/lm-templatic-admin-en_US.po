@@ -1,0 +1,1271 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tevolution - LocationManager v1.0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-26 14:31+0530\n"
+"PO-Revision-Date: 2014-09-26 14:32+0530\n"
+"Last-Translator: \n"
+"Language-Team: Templatic <upendra@templatic.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-Basepath: C:\\xampp\\htdocs\\wp40beta\\wp-content\\plugins"
+"\\Tevolution-LocationManager\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: C:\\xampp\\htdocs\\wp40beta\\wp-content\\plugins"
+"\\Tevolution-LocationManager\n"
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/bundle_box.php:20
+msgid "Tevolution Location Manager"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/bundle_box.php:24
+msgid ""
+"A directory module from Templatic that helps you to enhance your website "
+"with some brilliant features like showing map, places, sorting places with "
+"the help of map etc. This feature gives you freedom and flexibility to add,"
+"sort and monitor your places from your back-end. "
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/bundle_box.php:29
+msgid "Activate &rarr;"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/bundle_box.php:34
+msgid "Deactivate "
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/bundle_box.php:35
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/location-manager.php:173
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/location-manager.php:177
+msgid "Settings"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/google_map_widget.php:11
+msgid ""
+"Display a Google map with custom icons and marker clusters while operating "
+"multiple cities. Widget works best inside the Homepage Slider or Homepage - "
+"Main Content area."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/google_map_widget.php:12
+msgid "T &rarr; Homepage Map - multi city"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/google_map_widget.php:168
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/googlemap_listing_widget.php:364
+msgid ""
+"Map Height: <small>(Default is 500px. To change enter a numeric value.)</"
+"small>"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/google_map_widget.php:176
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/googlemap_listing_widget.php:371
+msgid "Disable Clustering"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/google_map_widget.php:288
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/googlemap_listing_widget.php:143
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/map/map-shortcodes/city_map_shortcode.php:320
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/map/map-shortcodes/map-shortcodes.php:79
+msgid "review"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/google_map_widget.php:288
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/googlemap_listing_widget.php:143
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/map/map-shortcodes/city_map_shortcode.php:320
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/map/map-shortcodes/map-shortcodes.php:79
+msgid "reviews"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/googlemap_listing_widget.php:14
+msgid ""
+"Show a map on category pages while operating multiple cities. Use in "
+"category page sidebar and category page - below header areas."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/googlemap_listing_widget.php:15
+msgid "T &rarr; Category Page Map - multi city"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/googlemap_listing_widget.php:374
+msgid "Show all posts on category map"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/googlemap_listing_widget.php:375
+msgid ""
+"With large categories this can significantly increase category page load "
+"time. When this option is disabled, the map will only show posts from the "
+"current page."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:9
+msgid "City Wise Logs"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:10
+msgid "Back to city logs"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:24
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:485
+msgid "City Logs"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:26
+msgid ""
+"Use this section to see how many times was each of your cities visited. This "
+"is useful in determining which is your most popular city."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:92
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:237
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1358
+msgid "City Name"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:93
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:768
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1213
+msgid "State Name"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:94
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:591
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:770
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1117
+msgid "Country Name"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:95
+msgid "Total Count"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:96
+msgid "Views"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:238
+msgid "IP Address"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_city_logs.php:239
+msgid "Counter"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:160
+msgid "Imported your MultiCity Csv file successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:199
+msgid "Drop MultiCity entries successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:216
+msgid "CSV City Import"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:219
+msgid ""
+"Directly upload all the content of your cities here and check under wp-admin "
+"-&gt; Tevolution -&gt; Manage Locations -&gt; Cities. This will help you "
+"reduce the manual work of adding each city individually.<br><strong>Tip:</"
+"strong> You can directly add/delete your cities their in csv file itself and "
+"then upload here, it will save your time."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:221
+msgid ""
+"If you want to import cities from GeoPlaces4 to Tevolution-LocationManager "
+"plugin with same City ID then"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:223
+msgid "Click Here"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:225
+msgid ""
+"to drop the current city entries and then import the city CSV exported from "
+"your GeoPlaces site here. "
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:226
+msgid "Upload your CSV file"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:230
+msgid "Import csv"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:232
+#, php-format
+msgid ""
+"Download the <a href=\"%s\">sample CSV file</a> to see the correct structure "
+"of the Multicity.csv file. To use bulk upload with custom fields simply add "
+"them as new columns inside your .csv file at last(at the end). "
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:239
+msgid "CSV City Export"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:242
+msgid ""
+"Directly download all the city from here and save it on your hard drive."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:243
+msgid "Export City CSV file"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:246
+msgid "Export TO csv"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:265
+msgid "Enable distance-aware related posts for"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:278
+#, php-format
+msgid ""
+" No custom post type has been created at your site yet. Please <a href=\"?"
+"page=%s\"> create it </a> to list it here."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:282
+msgid ""
+"When this option is enabled, related posts will only show if within the "
+"distance you set below. The distance is relative to the post currently "
+"visited."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:286
+msgid "Set the distance"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:289
+msgid "1"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:290
+msgid "5"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:291
+msgid "10"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:292
+msgid "100"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:293
+msgid "1000"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:294
+msgid "5000"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:297
+msgid "Miles"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:298
+msgid "Kilometer"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:300
+msgid ""
+"Specify the distance from which related posts will be pulled. This option is "
+"functional only if you enabled distance-aware functionality for your post "
+"type."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:339
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:342
+msgid "Location"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:615
+msgid "City Base"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:621
+msgid "Remove base"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:626
+msgid "Or Change the base to"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:628
+msgid "(city-base)"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:28
+msgid "Country"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:32
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:542
+msgid "Select Country"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:36
+msgid "State"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:40
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:543
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1581
+msgid "Select State"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:44
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:969
+msgid "City"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:48
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:544
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1598
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1634
+msgid "Select City"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:446
+msgid "Location setting fields per page"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:459
+msgid "Locations"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:460
+msgid ""
+"Using this section you will be able to define country, states and cities "
+"which can then be used to filter content on your site. Posts, listings or "
+"events added for one city will not show for other cities. Read more about "
+"<strong>how to manage cities <a href=\"http://templatic.com/docs/directory-"
+"theme-guide/#multiplecities\">here</a></strong>."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:476
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:481
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/location-manager.php:187
+msgid "Manage Locations"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:476
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:482
+msgid "Countries"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:477
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:483
+msgid "States"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:478
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:484
+msgid "Cities"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:542
+msgid "Please select Country name"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:543
+msgid "Please select State name"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:544
+msgid "Please select City name"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1344
+msgid "City Base In Category Pages"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1345
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:323
+msgid "Enable"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1346
+msgid ""
+"Enabling this will include the city slug and city name inside category URLs, "
+"allowing you to link to a category inside a specific city.<br/> <strong>Do "
+"not enable this</strong> if your site has already been indexed by Google as "
+"those old links will lead to a 404 page."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:92
+msgid "Please select any post type."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:152
+msgid "City selector style"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:155
+msgid "Dropdowns"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:156
+msgid "Links"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:158
+msgid ""
+"City selector is used to change the current city. It is located inside the "
+"header. "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:161
+msgid "City selector shows"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:162
+msgid "All Countries"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:163
+msgid "One Country"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:168
+msgid "Only Cities"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:169
+msgid ""
+"Select how you want to manage locations in front end:</br> 1) All Countries: "
+"Choose this option if you&acute;re looking to create a global directory with "
+"multiple countries.</br> 2) One Country: Selecting this option will remove "
+"the \"Country\" drop down from the city selectors inside the theme. . </br> "
+"3) Only Cities: Selecting this will remove the \"Country\" and \"State\" "
+"drop downs from city selectors. Use this option when creating a small "
+"directory for just a couple of cities."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:230
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:234
+msgid "Record updated successfully."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:250
+msgid ""
+"The MaxMind option cannot be saved because you have not placed MaxMind "
+"folder under plugins/Tevolution-LocationManager."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:265
+msgid "Freegeoip"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:266
+msgid "MaxMind"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:267
+#, php-format
+msgid ""
+"Download this <a href=\"%s\">zip file</a>, extract it and place it into wp-"
+"content/plugins/Tevolution-LocationManager/ folder."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:272
+msgid "Homepage Displays"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:274
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:944
+msgid "Default City"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:275
+msgid "Ask To Show Nearest City"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:276
+msgid "Nearest City"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:277
+msgid ""
+"When this option is selected all visitors will be taken to the default city"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:278
+msgid ""
+"When this option is selected all visitors will be taken to the city closest "
+"to them (without confirming it first)."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:279
+msgid ""
+"Upon visiting the site visitors will be asked whether they want to share "
+"their location. If they confirm they will be taken to the nearest city. If "
+"they refuse the default city will open."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:283
+msgid "Activate location management for"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:321
+msgid "Track city visits (city logs)"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:324
+msgid ""
+"Enabling this option will turn on city logging and show the \"City Logs\" "
+"tab. "
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:329
+msgid "Submit"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:361
+msgid "Add a Country"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:362
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:369
+msgid "Back to countries list"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:368
+msgid "Edit Country"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:375
+msgid "Manage Countries"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:376
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:504
+msgid "Add a field for country"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:376
+msgid "Add new country"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:378
+msgid ""
+"Add and manage your country details from this section. To add new country, "
+"use above add link.<br> This section helps your user to select between all "
+"the countries available on your site."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:382
+msgid "Country created successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:384
+msgid "Country updated successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:386
+msgid "Country deleted  successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:388
+msgid "Country enable successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:390
+msgid "Country disable successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:424
+msgid "Add a State"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:425
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:432
+msgid "Back to states list"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:431
+msgid "Edit State"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:439
+msgid "Manage States"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:440
+msgid "Add a field for state"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:440
+msgid "Add new State"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:442
+msgid ""
+"Add and manage your state details from this section. You can add new states "
+"using above add link.<br> These states will be listed in the dropdown "
+"according to the country selected by your user."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:445
+msgid "State created successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:447
+msgid "State updated successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:449
+msgid "State deleted  successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:485
+msgid "Add a city"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:486
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:494
+msgid "Back to city list"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:488
+msgid ""
+"Adequate information will lead to accurate results and map. So, please enter "
+"all information accordingly."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:493
+msgid "Edit city"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:496
+msgid "For accurate results, please enter the adequate information."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:503
+msgid "Manage Cities"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:504
+msgid "Add new city"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:506
+msgid ""
+"<b>Important note:</b> Cities will appear in front-end city selection box "
+"only after you add some listings/events to them. <br/><br/>"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:510
+msgid ""
+"City created successfully. Until you do not create any post for this "
+"particular city, it will not appear in a navigation strip for selection."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:512
+msgid "City updated successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:514
+msgid "City deleted  successfully."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:592
+msgid "Country Flag"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:593
+msgid "ISO Code2"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:594
+msgid "ISO Code3"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:596
+msgid "Active"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:597
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:771
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1143
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1505
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1530
+msgid "Browse"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:769
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1219
+msgid "State Code"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:970
+msgid "Located In"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:971
+msgid "Map Type"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:972
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1421
+msgid "Post Type"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:973
+msgid "Message"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:974
+msgid "Scaling Factor"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1041
+msgid "Delete"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1043
+msgid "City ID:"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1044
+msgid "Edit"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1046
+msgid "Set Default"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1120
+msgid "Write the country name."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1124
+msgid "ISO Code 2"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1127
+msgid ""
+"Write the two letter country code here <br>(e.g. \"US\" for United States of "
+"America. You can find these codes from"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1127
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1134
+msgid "here"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1131
+msgid "ISO Code 3"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1134
+msgid ""
+"Write the three letter country code here <br>(e.g. \"US\" for United States "
+"of America. You can find these codes from"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1138
+msgid "Country flag"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1141
+msgid "Or"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1145
+msgid ""
+"Upload flag image for above mentioned country. It will appear on your site "
+"along with the country name."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1150
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1227
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1537
+msgid "Save all changes"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1215
+msgid "Write the state name that falls in the above selected country"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1221
+msgid "Write the zone code of the above mentioned state"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1330
+msgid "Map type"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1332
+msgid "  Road Map"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1333
+msgid "Terrain Map"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1335
+msgid "Satellite Map"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1337
+msgid "Hybrid  Map"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1339
+msgid "Select any of the above type for your map"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1344
+msgid "Map scaling factor"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1354
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1417
+msgid ""
+"Define the zoom level of the map here.<br/> Its Min. value is 1 and Max. "
+"Value is 19. The recommended level is 13"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1379
+msgid "City latitude"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1383
+msgid "City longitude"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1387
+msgid "Home Page Map display"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1390
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1400
+msgid "According to Map Scaling factor"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1392
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1402
+msgid "Fit all available listings"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1393
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1403
+msgid ""
+"Select whether you want to display map as per Map scaling factor you have "
+"set above or adjust the scaling factor<br/> automatically so that all "
+"available listings appear on the map."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1397
+msgid "Category/Archive page Map display"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1407
+msgid "Category/Archive page Map scaling factor"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1439
+msgid ""
+"Selected post type will be displayed on home page map. <br> <b>Note:</b> "
+"Make sure about its category selection in the below given &quot;"
+"Categories&quot; option"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1444
+msgid "Categories"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1475
+msgid ""
+"Select the categories for which this field should appear in on the place or "
+"event submission form."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1479
+msgid "City Message"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1482
+msgid ""
+"Write a description of the city that you would like to display on your site."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1486
+msgid "Background Color"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1498
+msgid ""
+"choose a background color for this city. <br> <b>Tip:</b>You can define a "
+"color that represents the particular city to add an advantage to recognize "
+"the cities on your site."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1503
+msgid "Background Image"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1506
+msgid ""
+"Upload image to display it as a background image for this city. Ideal width "
+"size for it is <b>1900 pixels</b>."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1511
+msgid "Header Background Color"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1523
+msgid ""
+"choose a header background color for this city. <br> <b>Tip:</b>You can "
+"define a color that represents the particular city to add an advantage to "
+"recognize the cities on your site."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1528
+msgid "Header Upload Image"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1532
+msgid ""
+"Upload image to display it as a header background image for this city.Ideal "
+"width size for it is 1240 pixels and keep the height upto 240px."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1594
+msgid "States not available"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1646
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1668
+msgid "City not available"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1708
+msgid "Select All"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1808
+#, php-format
+msgid "There is no categories in %s"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:22
+msgid ""
+"Displays a dropdown for selecting a country, state and city. Use the widget "
+"only once per page. Works best in sidebar areas."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:23
+msgid "T &rarr; City DropDown (Country &rsaquo; States &rsaquo; City)"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:27
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:153
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:271
+msgid "Multicity"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:136
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:254
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:350
+msgid "Widget Title"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:148
+msgid ""
+"Displays a dropdown for state and city. Use the widget only once per page. "
+"Works best in sidebar areas."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:149
+msgid "T &rarr; City DropDown From Country"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:266
+msgid "Displays a drop down for city. Works best in sidebar areas."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:267
+msgid "T &rarr; City DropDown"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/location-manager.php:27
+msgid "System might facing the problem in include "
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/location-manager.php:87
+#, php-format
+msgid ""
+"You have not activated the base plugin %s. Please activate it to use "
+"Tevolution-LocationManager plugin."
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:4
+msgid "Tevolution Update"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:38
+msgid ""
+"Invalid UserName or password. are you using templatic member username and "
+"password?"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:61
+msgid ""
+"Oops, we have a problem. The information you provided is either incorrect or "
+"you don't have Tevolution - LocationManager Plugin available inside the "
+"account. If you think everything should be ok with your account, please"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:61
+msgid "contact us."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:67
+msgid ""
+"Invalid UserName or password. Please enter templatic member's username and "
+"password."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:87
+msgid ""
+"Enter your Templatic account credentials to proceed with the update. These "
+"are the same details you use for the member area."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:100
+msgid "User Name: "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:104
+msgid "Password: "
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:109
+msgid "Cancel"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:118
+msgid "Important!"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:118
+msgid ""
+"Clicking on \"Update Now\" will overwrite all files. If you customized the"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:118
+msgid "code in any way please abort the update process and backup now."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:118
+msgid "Click here"
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:118
+msgid "for tips on how to backup your files and database."
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/templatic_login.php:118
+msgid "Update Now"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/wp-updates-plugin.php:42
+msgid "There is a new version of Tevolution-Location Manager plugin available "
+msgstr ""
+
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/wp-updates-plugin.php:47
+msgid "update now"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/wp-updates-plugin.php:90
+msgid ""
+"An Unexpected HTTP Error occurred during the API request.</p> <p><a href=\"?"
+"\" onclick=\"document.location.reload(); return false;\">Try again</a>"
+msgstr ""
+
+# @ templatic-admin
+#: C:\xampp\htdocs\wp40beta\wp-content\plugins\Tevolution-LocationManager/wp-updates-plugin.php:94
+msgid "An unknown error occurred"
+msgstr ""

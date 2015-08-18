@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tevolution - LocationManager v1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-28 16:41+0530\n"
+"PO-Revision-Date: 2015-04-28 16:41+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\wp40beta\\wp-content\\plugins\\Tevolution-"
+"LocationManager\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: C:\\wamp\\www\\wp40beta\\wp-content\\plugins"
+"\\Tevolution-LocationManager\n"
+
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/google_map_widget.php:111
+msgid ""
+"Your selected category does not have any records at your current location."
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/google_map_widget.php:115
+msgid "Title or Keyword"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/location_functions.php:397
+msgid "Select a city"
+msgstr ""
+
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:8
+msgid "Country"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:12
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:77
+msgid "Select Country"
+msgstr ""
+
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:16
+msgid "State"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:20
+msgid "Select State"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:24
+msgid "City"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:28
+msgid "Select City"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:82
+msgid "Loading..."
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:84
+msgid "Default City"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:487
+msgid "Multi City"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:939
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1091
+msgid "My Nearest City"
+msgstr "My Nearest City"
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1048
+msgid "Location"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_function.php:1195
+msgid "Please wait, We are taking you to your nearest city."
+msgstr ""
+
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:248
+msgid "Location Tracking Method"
+msgstr ""
+
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:304
+msgid ""
+"We Suggest you to deactivate the <span style=\"color:red;\">Tevolution-"
+"LocationManager</span> plugin instead of disabling all the post types, as "
+"there is not single feature work if you don&#39;t select any posttype."
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/manage_locations.php:1686
+msgid "Categories"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/map/locations_map.php:239
+msgid ""
+"Clicking the above \"Set Address on Map\" button, you can simply drag the "
+"pinpoint to locate the exact address on the map. "
+msgstr ""
+
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/map/map-shortcodes/city_map_shortcode.php:130
+msgid ""
+"Your selected category do not have any records yet at your current location."
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/map/map-shortcodes/map-shortcodes.php:87
+msgid "Pinpoint"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:91
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:200
+msgid "All Regions"
+msgstr ""
+
+# @ lmtemplatic
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:106
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:215
+#: C:\wamp\www\wp40beta\wp-content\plugins\Tevolution-LocationManager/functions/widget_functions.php:314
+msgid "All Cities"
+msgstr ""

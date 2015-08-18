@@ -1,0 +1,648 @@
+Templatic Plugin - Tevolution-LocationManager(Version 2.0.8)  
+=====================================================================================
+
+19th June 2015 (Version 2.0.8)
+-------------------------------------------------------------------------------------
+Fix - Map was not showing when show all markers option were selected.
+
+Fix - Categories were all selected even we deselect some of them from frontend.
+
+Fix - States was showing special characters in ajax in spanish language.
+
+Fix - Select all categories was not working in chrome.
+-------------------------------------------------------------------------------------
+
+28th May 2015 (Version 2.0.7)
+-------------------------------------------------------------------------------------
+Fix - Added condition to clear cache of supper cache plugin while change in city.
+
+Fix - page goes to  homepage when we click on search page results.
+
+Fix - City with large number of categories doesnot save.
+
+Fix - City was not showing when select option as "dropdown".
+
+Fix - When select city as "Global city" and click on any listing url shows "global city".
+
+Fix - Current city was not selected.
+
+Fix - Order by option was not applicable in category widget.
+
+Fix - Toggle on all in one page was not working when location manager is not active.
+
+Fix - Map was hang when all post type check box was deselected.
+-------------------------------------------------------------------------------------
+
+24th April 2015 (Version 2.0.6)
+-------------------------------------------------------------------------------------
+Fix - City slug became same when edit listing.
+
+Fix - Cluster was not clearing after all checkbox unchecked.
+
+Fix - City was not changing when one country city dropdown is selected.
+
+Fix - While search on google map listing does not come.
+
+Fix - After city edit does not redirect to the particular pagination page, instead it redirects to city first page.
+
+Fix - After instant search, the url of mulitple selected city post does not return the url of currently selected city.
+
+Fix - z-index problem with map and city selector.
+
+Fix - Initially the map will fetch correct map co-ordinates from the city we have selected from header region but as soon as we choose the category, the map co-ordinates will reverts to the default locations as Newyork.
+
+Fix - Advanced search widget searches from the selected city form header only and not from the selected city of widget.
+
+Fix - WordPress 4.2 & Security related changes.
+-------------------------------------------------------------------------------------
+
+18th March 2015 (Version 2.0.5)
+-------------------------------------------------------------------------------------
+
+Change - To optimize the home page map search query, it take too much processing time.
+
+Fix - Country, state and city was not by default selected on back end edit time. when particular listing is published.
+
+Fix - Nearest city problem when no listings in city.
+
+Fix - If there is not listing in post type don't show that post type on map.
+
+Fix - Don't show state which have no listing.
+
+Fix - Export csv not working with wp-conent folder rename.
+-------------------------------------------------------------------------------------
+
+2nd February 2015 (Version 2.0.4)
+-------------------------------------------------------------------------------------
+
+Fix - google map does not show while backward slash is used in address field.
+
+Fix - If I don't write anything in the title field of the "T ? City DropDown (Country › States › City)" widget, it is displaying "Multicity" title by default at the front end.
+
+Fix - warning messages comes even if the debuge mode = "false".
+
+Fix - when select city from one to another on home page while that time page gives 404 error.
+
+Fix - Add Newzealand states.
+
+Fix - custom fields does not fetch in mail while WYSIWYG submission.
+
+Fix - map clustering was not working.
+
+Fix - when add map in other relevant homepage widget area, while that time all the links on that page was not working.
+-------------------------------------------------------------------------------------
+
+25th December 2014 (Version 2.0.3)
+-------------------------------------------------------------------------------------
+
+Fix - On category wise custom fields the map location changes after selecting category on submit form.
+
+Fix - It was displaying country names multiple times in the city drop down box
+
+Fix - The full width map was not loading on the category pages in the Chrome
+
+Fix - Zooming option was not proper on category page map
+
+Fix - Multicity field was not displaying on the Add ads page in the back end
+
+Fix - City log entries were not getting inserted in the back end
+
+Fix - City directory map short code was not working
+
+Fix - Multicity csv file was not getting imported if there is any special character in the city name
+
+Fix - The search was not working on the home page map
+
+Fix - The cities were not getting sorted alphabetically at the header
+-------------------------------------------------------------------------------------
+
+29th November 2014 (Version 2.0.2)
+-------------------------------------------------------------------------------------
+Fix - Improved some scripts which caused the longer site load times
+
+Fix - Map icon was appearing wrong for grandchild categories
+
+Fix - Map search was showing wrong results
+
+Fix - Site was loading slow when permalink rules were changed
+
+Fix - Order of cities was not alphabetical when Only Cities option was selected in Manage Locations
+
+Fix - Not all cities were coming up in Multi city widget when a lot of cities are entered
+
+Fix - PHP notices on plugin activation
+
+Fix - When Category specific custom fields option is enabled map location changes once we select the category
+
+Fix - WordPress Database error for City Logs table
+-----------------------------------------------------------------------------------
+
+11th November 2014 (Version 2.0.1)
+-----------------------------------------------------------------------------------
+Fix - info window not open on same address with clustering on map.
+
+Fix - City slug was not removed from breadcrumbs on detail page.
+
+Fix - When set "Page as Blog" the pagination was not work.
+
+Fix - Sharing your location (for city tracking purposes) doesn't work when WordPress is installed inside a sub-folder.
+
+Fix - Multi city field was not not editable.
+
+Fix - City selector was not work when select only city with drop down.
+
+Fix - info window not open on same address with clustering on map.
+-------------------------------------------------------------------------------------
+
+28th October 2014 (Version 2.0)
+-------------------------------------------------------------------------------------
+Fix - Option to get rid of the city base from URLs, we can rename/remove it from the custom permalinks.
+
+Fix - Show the current city map on submission form
+
+Fix - If one country, state or city is there in the drop-down  - then auto select it 
+
+Fix - Remove design flexibility like city selector position and instead make it possible to code the way like anyone can change it. show a popup for city selector. 
+
+Fix - Added optional Maxmind option for detecting the visitor's location along with the current freegeoip option.
+
+Fix - Make the code optimization.
+
+Fix - Move the options of map settings to genetal settings ->category and detail page settings
+
+Fix - Now, single city map and map options will be not shown when location manager is activated.
+
+Fix - On category/search results page, you can drag the map and listing on that page will be filtered in real time to match the icons visible on map.
+-------------------------------------------------------------------------------------
+
+10th July 2014 (Version 1.1.4)
+-------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------
+New - The option to set the zoom level for category page maps while adding/editing a city in backend
+---------------------------------------------------------------------------------------------------------
+functions/manage_locations.php
+functions/googlemap_listing_widget.php
+functions/manage_function.php
+js/googlemap.js
+
+----------------------------------------------------------------
+Improvement: Linked image on map pop up detail page of the listing
+----------------------------------------------------------------
+functions/google_map_widget.php
+functions/googlemap_listing_widgte.php
+functions/map/map-shortcodes/city_map_shortcodes.php
+
+-----------------------------------------------------------------------------------------
+Fix - City was not getting changed when a special character was used in a city
+-----------------------------------------------------------------------------------------
+functions/manage_locations.php
+functions/google_map_widget.php
+functions/manage_function.php
+
+-----------------------------------------------------------------------------------------
+Fix - City selection box was not appearing properly in mobile devices
+-----------------------------------------------------------------------------------------
+css/locations.css
+
+-----------------------------------------------------------------------------------------
+Fix - On preview page and edit page, pre selected country and zone was not staying selected
+-----------------------------------------------------------------------------------------
+functions/manage_functions.php
+
+---------------------------------------------------------------------------------------------------------
+Fix - City Dropdown widget was not redirecting on selected city when Only cities option is selected
+from manage locations section
+---------------------------------------------------------------------------------------------------------
+functions/widget_functions.php
+
+-----------------------------------------------------------------------------------------------
+Fix -  With default permalink archive page permalink was not getting generated properly
+----------------------------------------------------------------------------------------------
+functions/location_rewrite_rule.php
+
+-----------------------------------------------------------------------------------------------
+Fix -  If a category is not selected in a particular city sitemap link for that category in that
+city will not be generated
+----------------------------------------------------------------------------------------------
+functions/location_rewrite_rule.php
+
+---------------------------------------------------------------------------------------------------------
+Fix -  If we enable only one post type from Manage locations section, citywise filtering was not working
+----------------------------------------------------------------------------------------------------------
+functions/location_filter.php
+
+
+4th June 2014 (Version 1.1.3)
+----------------------------------------------------------------------------------
+
+Fix: Used WordPress default function "sanitize_title" to generate city slugs
+------------------------------------------------------------------------------
+functions/location_functions.php
+functions/manage_locations.php
+----------------------------------------------------------------------------
+
+Fix: Changing the city from city dropdown widget was redirecting to home page
+-------------------------------------------------------------------------------
+functions/widget_functions.php
+--------------------------------------------------------------------------
+Fix: Parent category marker issue on category page map
+Fix: Map icon was not showing properly
+------------------------------------------------------------
+functions/google_map_widget.php
+-----------------------------------------------------------------------------------------------------------------
+
+Fix: Newly added location options(All Countries, One Country, Only cities) were not working with advance search
+-----------------------------------------------------------------------------------------------------------------
+functions/manage_function.php
+------------------------------------------------------------------------------------
+
+Improvement: Show country, state and city fields according to city Selection Area 
+Change: Created a common function to fetch Country, city and state drop downs
+------------------------------------------------------------------------------
+functions/manage_function.php
+functions/manage_locations.php
+----------------------------------------------------------------------------------------------------
+
+Fix: Generate city wise tevolution taxonomies link in sitemap xml for wordpress seo yoast plugin
+Fix: Generate home page url city wise on google sitemap xml plugin
+--------------------------------------------------------------------------------------------
+functions/location_rewrite_rule.php
+------------------------------------------------------------------------------
+
+
+23rd April 2014 (Version 1.1.2)
+-----------------------------------------------------------------------------------------------------------
+Feature: Added an option to manage locations in different ways: All Countries, One Country and Only cities
+-----------------------------------------------------------------------------------------------------------
+functions/manage_locations.php
+functions/map/locations_map.php
+functions/manage_function.php
+functions/widget_functions.php
+location-manager.php
+------------------------------------------------------------------------
+
+Improvement: Improved design of auto updates pop up box
+---------------------------------------------------------------------
+location-manager.php
+templatic_login.php
+New file: images/templatic.png
+------------------------------------------------------------------------------------------
+
+Fix: In city dropdown widget the cities which does not have a listing were also appearing
+------------------------------------------------------------------------------------------
+functions/manage_function.php
+functions/widget_functions.php
+---------------------------------------------------------------------------------------------
+
+Fix: Because of unnecessary space or some special characters map markers were not appearing
+--------------------------------------------------------------------------------------------
+functions/google_map_widget.php
+js/googlemap.js
+------------------------------------------------------------------------------------------
+
+Fix: Home page map widget shows categories even if we delete post type of those categories
+------------------------------------------------------------------------------------------
+functions/google_map_widget.php
+----------------------------------------------------------------------------------------
+
+Fix: If translated cities are imported with City CSV the submit form was not working
+--------------------------------------------------------------------------------------
+functions/location_functions.php
+----------------------------------------------------------------
+
+Fix: Monthly archive page was redirecting to 404 page
+----------------------------------------------------------------
+functions/location_filter.php
+--------------------------------------------------
+
+
+1st April 2014 (Version 1.1.1)
+------------------------------------------------------------------------------
+Fix: Translation with WPML was not working on maps where Ajax was used
+------------------------------------------------------------------------------
+functions/google_map_widget.php
+functions/manage_function.php
+functions/manage_locations.php
+functions/map/map-shortcodes/city_map_shortcode.php
+------------------------------------------------------------------------------
+
+Change: Converted CSV files to UTF8 format to avoid issues with special characters
+----------------------------------------------------------------------------------
+functions/csv/country.csv
+functions/csv/multi_city.csv
+functions/csv/zones.csv
+----------------------------------------------------------------------------------
+
+Fix: Google map issues with IE
+-------------------------------------------------------
+js/googlemap.js
+--------------------------------------------------------------
+
+Fix- Map cache gets deleted when new listing is submitted
+--------------------------------------------------------------
+functions/location_functions.php
+--------------------------------------------------------------
+
+Improvement: Minified CSS
+-------------------------------------------------
+css/location.css
+---------------------------------------------------------------------------------------------
+
+Fix: Alt title on homa page map markers displays hexa codes if spcecial characters are used
+---------------------------------------------------------------------------------------------
+functions/google_map_widget.php
+-------------------------------------------------
+
+6th March 2014 (Version 1.1.0)
+--------------------------------------------------------------------------------
+New Functionality: Added an option to change city slug in permalinks
+--------------------------------------------------------------------------------
+functions/manage_locations.php
+functions/manage_function.php
+functions/location_functions.php
+functions/location_rewrite_rule.php
+functions/location_filter.php
+
+------------------------------------------------------------------------------
+Fix: Front end city dropdown loads slow with more number of cities
+-----------------------------------------------------------------------
+functions/manage_locations.php
+
+------------------------------------------------------------------------------------------
+Fix: Issue with category map widget loading if we use a special character in category name
+------------------------------------------------------------------------------------------
+functions/googlemap_listing_widget.php
+
+------------------------------------------------------------------
+Fix:  Map markers were not displaying in IE8
+------------------------------------------------------
+functions/googlemap_listing_widget.php
+js/googlemap.js
+js/page_googlemap.js
+
+------------------------------------------------------------------------------
+Improvement: Speed improvement in home page map with more number of listings
+------------------------------------------------------------------------------
+functions/google_map_widget.php
+functions/location_functions.php
+js/googlemap.js
+
+------------------------------------------------------------------------------
+Fix: Display categories in hierarchy on home page map
+------------------------------------------------------------------------------
+functions/google_map_widget.php
+
+----------------------------------------------------------------------------------------------
+Improvement: While creating a city the active/created post types are selected by default now
+----------------------------------------------------------------------------------------------
+functions/manage_locations.php
+----------------------------------------------------------------------------------------------
+
+Fix: Display related listings on detail page locationwise
+-------------------------------------------------------------------
+functions/location_filter.php
+------------------------------------------------------------------
+
+Improvements in Localization
+------------------------------------------------------------------
+location-manager.php
+------------------------------------------------
+
+Improvements in backend help messages
+-----------------------------------------------
+functions/manage_function.php
+functions/location_functions.php
+------------------------------------------------------------------
+
+Fix: Fetch cities according to states in backend edit listing page
+--------------------------------------------------------------------
+functions/manage_function.php
+-------------------------------------------------------------------------------
+
+Fix- Display category wise map icons on all listing, all events archive pages
+------------------------------------------------------------------------------
+functions/googlemap_listing_widget.php
+------------------------------------------------------------------------------
+
+Fix: Google map marker info window design issue when there is no image in the listing
+---------------------------------------------------------------------------------------
+functions/google_map_widget.php
+functions/googlemap_listing_widget.php
+functions/map/map-shortcodes/city_map_shortcode.php
+---------------------------------------------------------------------------------------
+
+Fix: Previous and Next post links on detail pages were not coming citywise
+----------------------------------------------------------------------------
+functions/location_filter.php
+----------------------------------------------------------------------------
+
+Fix: Google map does not show markets due to special characters in listings
+----------------------------------------------------------------------------
+functions/google_map_widget.php
+----------------------------------------------------------------------------
+
+Fix: Corrected the country ID in City CSV
+----------------------------------------------------------
+functions/csv/multi_city.csv
+------------------------------------------
+
+
+5th February 2014 (Version 1.0.9)
+-------------------------------------------------------------------------------------------------------
+Fix:  Auto generate geo coordinates on city name when user didnt add in csv file while importing cities
+-------------------------------------------------------------------------------------------------------
+functions/location_functions.php
+------------------------------------------------------------------------------------------------------------
+Fix: Home Page Map: If you un-tick a post type "Listing", it will deselect all the categories from the list.
+Ticking it again doesn't reselect all it's categories. 
+------------------------------------------------------------------------------------------------------------
+functions/google_map_widget.php
+js/googlemap.js
+------------------------------------------------------------------------------------------------------
+Fix: Made google map not dragabble in mobile devices as it was now allowing to scroll down the page
+------------------------------------------------------------------------------------------------------
+functions/google_map_widget.php
+functions/googlemap_listing_widget.php
+functions/map/map-shortcodes/city_map_shortcode.php
+functions/map/map-shortcodes/current_city_map_shortcode.php
+----------------------------------------------------------------------------------------------
+Fix - Current city will be changed as per listing/event city wise url (using an external link)
+----------------------------------------------------------------------------------------------
+functions/manage_locations.php
+----------------------------------------------------------------------
+Fix: change admin-ajax.php url change on wpml language wise
+--------------------------------------------------------------
+functions/manage_function.php
+--------------------------------------------------------------
+Fix: remove period(.) inside city slug
+--------------------------------------------------------------
+functions/manage_locations.php
+------------------------------------------------------------
+Fix: Changed label to Select Country from All countries
+------------------------------------------------------------
+functions/manage_function.php
+functions/widget_functions.php
+
+--------------------------------------------------------------
+Fix: In all map widgets info window pop up was getting cut-off
+--------------------------------------------------------------
+css/location.css
+functions/googlemap_listing_widget.php
+functions/map/map-shortcodes/current_city_map_shortcode.php
+js/googlemap.js
+js/page_googlemap.js
+------------------------------------------------------------------
+
+
+18th January 2014 (Version 1.0.8)
+---------------------------------------------------------------------
+Improvement: Add hook to change the latitude longitude of map
+-------------------------------------------------------------------
+functions/map/locations_map.php
+--------------------------------------------------------------------------------------------------------------
+Fix: When there are multiple cities with same name the listing detail page was getting redirected to home page
+--------------------------------------------------------------------------------------------------------------
+functions/location_filter.php
+-------------------------------------------------------------------------------
+Fix: Cities were appearing in the states selectbox after selecting a country 
+-------------------------------------------------------------------------------
+functions/manage_locations.php
+------------------------------------------------------------------
+
+16th January 2014 (Version 1.0.7)
+----------------------------------------------------------------------------------
+Improvement: Localization Improvements
+----------------------------------------------------------------
+All files in the plugin
+--------------------------------------------------------------------
+Fix: City Selector was Getting hidden when Primary menu was selected
+---------------------------------------------------------------------
+css/location.css
+--------------------------------------------------
+
+9th January 2014 (Version 1.0.6)
+-----------------------------------------------------------
+Fix: Some unnecessary lines were appearing in the header
+-----------------------------------------------------------
+functions/manage_locations.php
+----------------------------------------------
+
+2nd January 2014 (Version 1.0.5)
+----------------------------------------------------------------------------------------------------------------------
+Fix: A call(clicking on My Nearest City link in the header)to freegeoip.com(for tracking location based on IP) used to 
+take site down when freegeoip.com is down
+- When freegeoip.com is down visitors will be redirected to the default city you selected
+----------------------------------------------------------------------------------------------------
+functions/manage_locations.php
+-------------------------------------------------------------------
+
+13th December 2013 (Version 1.0.4)
+------------------------------------------------------------------------
+Improvement: Changes in widget area names and descriptions
+------------------------------------------------------------------
+functions/google_map_widget.php
+functions/googlemap_listing_widget.php
+functions/widget_functions.php
+----------------------------------------------------------------------------------
+Fix: slashes comes in city name when enter aphostrophe('s) is there in city name
+----------------------------------------------------------------------------------
+functions/manage_locations.php
+---------------------------------------------
+Fix- Issue in fetching nearest city
+-----------------------------------------------
+functions/manage_locations.php
+----------------------------------------------
+
+3rd December 2013 (Version 1.0.3)
+---------------------
+UPDATED : po-mo files
+---------------------
+languages/en_US.mo
+languages/en_US.po
+
+-------------------------------------------------------------------------------------
+FIX : City wise category display count issue on multipal post id count for same category.
+-------------------------------------------------------------------------------------
+functions/location_functions.php
+
+------------------------------------------
+FIX : Issue of location icon design on tablet.
+------------------------------------------
+css/location.css
+
+------------------------------------------------
+FIX : Double quote issue in google map address.
+------------------------------------------------
+functions/google_map_widget.php
+
+-------------------------------------------
+FIX : After post the comment redirect on 404
+-------------------------------------------
+functions/location_rewrite_rule.php
+
+----------------------------------------------------------
+FIX :
+Manage city display issue on sever more then 10L city in db.
+Header city selector dropdown issue.
+----------------------------------------------------------
+functions/manage_locations.php
+js/location_script.js
+js/location_script.min.js
+
+------------------------------------------------------
+FIX :
+post type location wise redirect issue.
+location urldecode for langguage wise set city slug 
+------------------------------------------------------
+functions/location_filter.php
+
+----------------------------------------------------------------
+FIX : Home page map different language marker pin didnt display.
+----------------------------------------------------------------
+functions/google_map_widget.php
+
+-------------------------------------------
+FIX : Display manage location title in bakend.
+-------------------------------------------
+location-manager.php
+
+------------------------
+FIX : w3c validation issue
+------------------------
+functions/manage_function.php
+
+
+
+20th November 2013 (Version 1.0.2)
+------------------------------------------------------------
+Improvement: Localization of whole plugin
+-----------------------------------------------------------------------------
+Fix - Fatal error was coming up when trying to export cities
+-----------------------------------------------------------------
+/functions/location_cities_export_csv.php
+-----------------------------------------------------
+Fix: External scripts were not working on SSL enabled website
+---------------------------------------------------------------
+/functions/manage_function.php
+-------------------------------------------
+
+15th November 2013 (Version 1.0.1)
+---------------------------------------------------------------------------
+Improvement: Used WP_CONTENT_DIR instead of ABSPATH/wp-content folder path
+--------------------------------------------------------------------------
+/functions/admin_ajax_categories.php
+/functions/location_cities_export_csv.php
+location-manager.php
+--------------------------------------------------------------------
+Fix: Map markers pop up issue in map widgets in mobile devices
+-----------------------------------------------------------------
+/js/googlemap.js
+--------------------------------------------------------------------------------------
+Fix: Markers were not appearing on map if listing title contains double quatation mark
+--------------------------------------------------------------------------------------
+/functions/google_map_widget.php
+--------------------------------------------------------------------
+Improvement: Other performance related improvements in whole plugin
+--------------------------------------------------------------------
+

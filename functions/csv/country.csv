@@ -1,0 +1,243 @@
+ID,CountryName,iso_code_2,iso_code_3,country_flg
+1,Afghanistan,AF,AFG,af.png
+2,Albania,AL,ALB,al.png
+3,Algeria,DZ,DZA,dz.png
+4,American Samoa,AS,ASM,as.png
+5,Andorra,AD,AND,ad.png
+6,Angola,AO,AGO,ao.png
+7,Anguilla,AI,AIA,ai.png
+8,Antarctica,AQ,ATA,aq.png
+9,Antigua and Barbuda,AG,ATG,ag.png
+10,Argentina,AR,ARG,ar.alt.png
+11,Armenia,AM,ARM,am.png
+12,Aruba,AW,ABW,aw.png
+13,Australia,AU,AUS,au.png
+14,Austria,AT,AUT,at.png
+15,Azerbaijan,AZ,AZE,az.png
+16,Bahamas,BS,BHS,bs.bs.png
+17,Bahrain,BH,BHR,bh.png
+18,Bangladesh,BD,BGD,bd.png
+19,Barbados,BB,BRB,bb.png
+20,Belarus,BY,BLR,by.png
+21,Belgium,BE,BEL,be.png
+22,Belize,BZ,BLZ,bz.png
+23,Benin,BJ,BEN,bj.png
+24,Bermuda,BM,BMU,bm.png
+25,Bhutan,BT,BTN,bt.png
+26,Bolivia,BO,BOL,bo.png
+27,Bosnia and Herzegowina,BA,BIH,bs.png
+28,Botswana,BW,BWA,bw.png
+29,Bouvet Island,BV,BVT,bv.png
+30,Brazil,BR,BRA,br.png
+31,British Indian Ocean Territory,IO,IOT,io.png
+32,Brunei Darussalam,BN,BRN,bn.png
+33,Bulgaria,BG,BGR,bg.png
+34,Burkina Faso,BF,BFA,bf.png
+35,Burundi,BI,BDI,bi.png
+36,Cambodia,KH,KHM,kh.png
+37,Cameroon,CM,CMR,cm.png
+38,Canada,CA,CAN,canada.png
+39,Cape Verde,CV,CPV,cv.png
+40,Cayman Islands,KY,CYM,ky.png
+41,Central African Republic,CF,CAF,cf.png
+42,Chad,TD,TCD,td.png
+43,Chile,CL,CHL,cl.png
+44,China,CN,CHN,cn.png
+45,Christmas Island,CX,CXR,cx.png
+46,Cocos (Keeling) Islands,CC,CCK,cc.png
+47,Colombia,CO,COL,co.png
+48,Comoros,KM,COM,km.png
+49,Congo,CG,COG,cg.png
+50,Cook Islands,CK,COK,ck.png
+51,Costa Rica,CR,CRI,cr.png
+52,Cote D'Ivoire,CI,CIV,ci.png
+53,Croatia,HR,HRV,hr.png
+54,Cuba,CU,CUB,cu.png
+55,Cyprus,CY,CYP,cy.png
+56,Czech Republic,CZ,CZE,cz.png
+57,Denmark,DK,DNK,dk.png
+58,Djibouti,DJ,DJI,dj.png
+59,Dominica,DM,DMA,dm.png
+60,Dominican Republic,DO,DOM,do.png
+61,East Timor,TP,TMP,tl.png
+62,Ecuador,EC,ECU,ec.png
+63,Egypt,EG,EGY,eg.png
+64,El Salvador,SV,SLV,sv.png
+65,Equatorial Guinea,GQ,GNQ,gq.png
+66,Eritrea,ER,ERI,er.png
+67,Estonia,EE,EST,et.png
+68,Ethiopia,ET,ETH,et.o.png
+69,Falkland Islands (Malvinas),FK,FLK,fk.png
+70,Faroe Islands,FO,FRO,fo.png
+71,Fiji,FJ,FJI,fj.png
+72,Finland,FI,FIN,fi.png
+73,France,FR,FRA,fr.png
+74,France Metropolitan,FX,FXX,fr.png
+75,French Guiana,GF,GUF,gf.png
+76,French Polynesia,PF,PYF,pf.png
+77,French Southern Territories,TF,ATF,tf.png
+78,Gabon,GA,GAB,ga.png
+79,Gambia,GM,GMB,gm.png
+80,Georgia,GE,GEO,ge.png
+81,Germany,DE,DEU,de.png
+82,Ghana,GH,GHA,gh.png
+83,Gibraltar,GI,GIB,gi.png
+84,Greece,GR,GRC,gr.png
+85,Greenland,GL,GRL,gl.png
+86,Grenada,GD,GRD,gd.png
+87,Guadeloupe,GP,GLP,gp.png
+88,Guam,GU,GUM,gu.png
+89,Guatemala,GT,GTM,gt.png
+90,Guinea,GN,GIN,gn.png
+91,Guinea-bissau,GW,GNB,gw.png
+92,Guyana,GY,GUY,gy.png
+93,Haiti,HT,HTI,ht.png
+94,Heard and Mc Donald Islands,HM,HMD,hm.png
+95,Honduras,HN,HND,hn.png
+96,Hong Kong,HK,HKG,hk.png
+97,Hungary,HU,HUN,hu.png
+98,Iceland,IS,ISL,is.png
+99,India,IN,IND,in.png
+100,Indonesia,ID,IDN,id.png
+101,Iran (Islamic Republic of),IR,IRN,ir.png
+102,Iraq,IQ,IRQ,iq.png
+103,Ireland,IE,IRL,ie.png
+104,Israel,IL,ISR,il.png
+105,Italy,IT,ITA,it.png
+106,Jamaica,JM,JAM,jm.png
+107,Japan,JP,JPN,jp.png
+108,Jordan,JO,JOR,jo.png
+109,Kazakhstan,KZ,KAZ,kz.png
+110,Kenya,KE,KEN,ke.png
+111,Kiribati,KI,KIR,ki.png
+112,Korea Democratic People's Republic of,KP,PRK,kp.png
+113,Korea Republic of,KR,KOR,kr.png
+114,Kosovo,XK,UNK,kos.png
+115,Kuwait,KW,KWT,kw.png
+116,Kyrgyzstan,KG,KGZ,kg.png
+117,Lao People's Democratic Republic,LA,LAO,la.png
+118,Latvia,LV,LVA,lv.png
+119,Lebanon,LB,LBN,lb.png
+120,Lesotho,LS,LSO,ls.png
+121,Liberia,LR,LBR,lr.png
+122,Libyan Arab Jamahiriya,LY,LBY,ly.png
+123,Liechtenstein,LI,LIE,li.png
+124,Lithuania,LT,LTU,lt.png
+125,Luxembourg,LU,LUX,lu.png
+126,Macau,MO,MAC,mo.png
+127,Macedonia The Former Yugoslav Republic of,MK,MKD,mk.png
+128,Madagascar,MG,MDG,mg.png
+129,Malawi,MW,MWI,mw.png
+130,Malaysia,MY,MYS,my.png
+131,Maldives,MV,MDV,mv.png
+132,Mali,ML,MLI,ml.png
+133,Malta,MT,MLT,mt.png
+134,Marshall Islands,MH,MHL,mh.png
+135,Martinique,MQ,MTQ,mq.png
+136,Mauritania,MR,MRT,mr.png
+137,Mauritius,MU,MUS,mu.png
+138,Mayotte,YT,MYT,yt.png
+139,Mexico,MX,MEX,mx.png
+140,Micronesia Federated States of,FM,FSM,fm.png
+141,Moldova Republic of,MD,MDA,md.png
+142,Monaco,MC,MCO,mc.png
+143,Mongolia,MN,MNG,mn.png
+144,Montenegro,ME,MNE,mon.png
+145,Montserrat,MS,MSR,ms.png
+146,Morocco,MA,MAR,ma.png
+147,Mozambique,MZ,MOZ,mz.png
+148,Myanmar,MM,MMR,mm.png
+149,Namibia,NA,NAM,na.png
+150,Nauru,NR,NRU,nr.png
+151,Nepal,NP,NPL,np.png
+152,Netherlands,NL,NLD,nl.png
+153,Netherlands Antilles,AN,ANT,an.png
+154,New Caledonia,NC,NCL,nc.png
+155,New Zealand,NZ,NZL,nz.png
+156,Nicaragua,NI,NIC,ni.png
+157,Niger,NE,NER,ne.png
+158,Nigeria,NG,NGA,ng.png
+159,Niue,NU,NIU,nu.png
+160,Norfolk Island,NF,NFK,nf.png
+161,Northern Mariana Islands,MP,MNP,mp.png
+162,Norway,NO,NOR,no.png
+163,Oman,OM,OMN,om.png
+164,Pakistan,PK,PAK,pk.png
+165,Palau,PW,PLW,pw.png
+166,Panama,PA,PAN,pa.png
+167,Papua New Guinea,PG,PNG,pg.png
+168,Paraguay,PY,PRY,py.png
+169,Peru,PE,PER,pe.png
+170,Philippines,PH,PHL,ph.png
+171,Pitcairn,PN,PCN,pn.png
+172,Poland,PL,POL,pl.png
+173,Portugal,PT,PRT,pt.png
+174,Puerto Rico,PR,PRI,pr.png
+175,Qatar,QA,QAT,qa.png
+176,Reunion,RE,REU,re.png
+177,Romania,RO,ROM,ro.png
+178,Russian Federation,RU,RUS,ru.png
+179,Rwanda,RW,RWA,rw.png
+180,Saint Kitts and Nevis,KN,KNA,kn.png
+181,Saint Lucia,LC,LCA,lc.png
+182,Saint Vincent and the Grenadines,VC,VCT,vc.png
+183,Samoa,WS,WSM,ws.png
+184,San Marino,SM,SMR,sm.png
+185,Sao Tome and Principe,ST,STP,st.png
+186,Saudi Arabia,SA,SAU,sa.png
+187,Senegal,SN,SEN,sn.png
+188,Seychelles,SC,SYC,sc.png
+189,Sierra Leone,SL,SLE,sl.png
+190,Singapore,SG,SGP,sg.png
+191,Slovakia (Slovak Republic),SK,SVK,sk.png
+192,Slovenia,SI,SVN,sl.png
+193,Solomon Islands,SB,SLB,sb.png
+194,Somalia,SO,SOM,so.png
+195,South Africa,ZA,ZAF,za.png
+196,South Georgia and the South Sandwich Islands,GS,SGS,gs.png
+197,South Sudan,SS,SSD,sudan.png
+198,Spain,ES,ESP,es.png
+199,Sri Lanka,LK,LKA,lk.png
+200,St. Helena,SH,SHN,sh.png
+201,St. Pierre and Miquelon,PM,SPM,pm.png
+202,Sudan,SD,SDN,sd.png
+203,Suriname,SR,SUR,sr.png
+204,Svalbard and Jan Mayen Islands,SJ,SJM,sj.png
+205,Swaziland,SZ,SWZ,sz.png
+206,Sweden,SE,SWE,sv.png
+207,Switzerland,CH,CHE,ch.png
+208,Syrian Arab Republic,SY,SYR,sy.png
+209,Taiwan,TW,TWN,tw.png
+210,Tajikistan,TJ,TJK,tj.png
+211,Tanzania United Republic of,TZ,TZA,tz.png
+212,Thailand,TH,THA,th.png
+213,Togo,TG,TGO,tg.png
+214,Tokelau,TK,TKL,tk.png
+215,Tonga,TO,TON,to.png
+216,Trinidad and Tobago,TT,TTO,tt.png
+217,Tunisia,TN,TUN,tn.png
+218,Turkey,TR,TUR,tr.png
+219,Turkmenistan,TM,TKM,tm.png
+220,Turks and Caicos Islands,TC,TCA,tc.png
+221,Tuvalu,TV,TUV,tv.png
+222,Uganda,UG,UGA,ug.png
+223,Ukraine,UA,UKR,uk.png
+224,United Arab Emirates,AE,ARE,ae.png
+225,United Kingdom,GB,GBR,uk_.png
+226,United States,US,USA,us.png
+227,United States Minor Outlying Islands,UM,UMI,um.png
+228,Uruguay,UY,URY,uy.png
+229,Uzbekistan,UZ,UZB,uz.png
+230,Vanuatu,VU,VUT,vu.png
+231,Vatican City State (Holy See),VA,VAT,va.png
+232,Venezuela,VE,VEN,ve.png
+233,Vietnam,VN,VNM,vn.png
+234,Virgin Islands (British),VG,VGB,vg.png
+235,Virgin Islands (U.S.),VI,VIR,vi.png
+236,Wallis and Futuna Islands,WF,WLF,wf.alt.png
+237,Western Sahara,EH,ESH,eh.png
+238,Yemen,YE,YEM,ye.png
+239,Serbia,RS,SRB,yu.png
+240,Zaire,ZR,ZAR,zr.png
+241,Zambia,ZM,ZMB,zm.png
+242,Zimbabwe,ZW,ZWE,zw.png
