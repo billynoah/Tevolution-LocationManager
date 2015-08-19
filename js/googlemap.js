@@ -197,7 +197,7 @@ function newgooglemap_initialize(map,posttype){
 					display_marker_nofound(totalcounts);
 				}
 			});
-		}else{ initialize() }
+		}else{ jQuery('.map_loading_div').css('display','none'); initialize() }
 	});/* finish post type loop	*/
 	
         /* this condiion commented because it load before the ajax return result - not show the loader in google map */

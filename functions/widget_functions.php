@@ -22,8 +22,8 @@ class widget_location_post_city_id extends WP_Widget {
 	
 	function widget_location_post_city_id() {
 		/*Constructor*/
-		$widget_ops = array('classname' => 'Multi City Options', 'description' => __('Displays a dropdown for selecting a country, state and city. Use the widget only once per page. Works best in sidebar areas.',LMADMINDOMAIN) );
-		$this->WP_Widget('widget_post_city_id', __('T &rarr; City DropDown (Country &rsaquo; States &rsaquo; City)',LMADMINDOMAIN), $widget_ops);
+		$widget_ops = array('classname' => 'Multi City Options', 'description' => __('Displays a dropdown for selecting a country, state and city. Use the widget only once per page. Works best in sidebar areas.','templatic-admin') );
+		$this->WP_Widget('widget_post_city_id', __('T &rarr; City DropDown (Country &rsaquo; States &rsaquo; City)','templatic-admin'), $widget_ops);
 	}
 	function widget($args, $instance) {
 		global $wpdb,$country_table,$zones_table,$multicity_table;
@@ -74,7 +74,7 @@ class widget_location_post_city_id extends WP_Widget {
 			<ul class="widget_location_nav">
 				<li>
 					<select name="widget_country" id="widget_country">
-						<option value=""><?php _e('Select Country',LDOMAIN);?></option>
+						<option value=""><?php _e('Select Country','templatic');?></option>
 					<?php foreach($countryinfo as $country): $selected=($country->country_id==$default_country_id)? 'selected':'';
 						$country_name=$country->country_name;
 						 if (function_exists('icl_register_string')){
@@ -88,7 +88,7 @@ class widget_location_post_city_id extends WP_Widget {
 				</li>
 				<li>
 					<select name="widget_zone" id="widget_zone">
-						<option value=""><?php _e('All Regions',LDOMAIN);?></option>
+						<option value=""><?php _e('All Regions','templatic');?></option>
 					<?php foreach($zoneinfo as $zone): $selected=($zone->zones_id ==$default_zone_id)? 'selected':'';
 							$zone_name=$zone->zone_name;
 							 if (function_exists('icl_register_string')) {
@@ -103,7 +103,7 @@ class widget_location_post_city_id extends WP_Widget {
 				<li>
 					<form name="widget_multicity_form" id="widget_multicity_form" action="<?php echo home_url( '/' ); ?>" method="post">
 						<select name="widget_city" id="widget_city">
-							<option value=""><?php _e('All Cities',LDOMAIN);?></option>
+							<option value=""><?php _e('All Cities','templatic');?></option>
 						<?php foreach($cityinfo as $city): $selected=($city->city_id ==$default_city_id)? 'selected':'';
 								   $cityname=$city->cityname;
 								   if (function_exists('icl_register_string')) {
@@ -133,7 +133,7 @@ class widget_location_post_city_id extends WP_Widget {
 		$title = strip_tags($instance['title']);
 		$desc1 = ($instance['desc1']);
 		?>
-		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php echo __('Widget Title',LMADMINDOMAIN);?>: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php echo __('Widget Title','templatic-admin');?>: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
 		<?php
 	}
 }
@@ -144,12 +144,12 @@ class widget_location_for_country extends WP_Widget {
 	
 	function widget_location_for_country() {
 		/*Constructor*/
-		$widget_ops = array('classname' => 'Multi City Options', 'description' => __('Displays a dropdown for state and city. Use the widget only once per page. Works best in sidebar areas.',LMADMINDOMAIN) );		
-		$this->WP_Widget('widget_post_city_id', __('T &rarr; City DropDown From Country',LMADMINDOMAIN), $widget_ops);
+		$widget_ops = array('classname' => 'Multi City Options', 'description' => __('Displays a dropdown for state and city. Use the widget only once per page. Works best in sidebar areas.','templatic-admin') );		
+		$this->WP_Widget('widget_post_city_id', __('T &rarr; City DropDown From Country','templatic-admin'), $widget_ops);
 	}
 	function widget($args, $instance) {
 		global $wpdb,$country_table,$zones_table,$multicity_table;
-		$title = empty($instance['title']) ? __('Multicity',LMADMINDOMAIN) : apply_filters('widget_title', $instance['title']);
+		$title = empty($instance['title']) ? __('Multicity','templatic-admin') : apply_filters('widget_title', $instance['title']);
 		if(!session_id())
 			session_start();		
 		/* When we use drop down - pass the city id of posted city in session */
@@ -197,7 +197,7 @@ class widget_location_for_country extends WP_Widget {
 			<ul class="widget_location_nav">				
 				<li>
 					<select name="widget_zone" id="widget_zone">
-						<option value=""><?php _e('All Regions',LDOMAIN);?></option>
+						<option value=""><?php _e('All Regions','templatic');?></option>
 					<?php foreach($zoneinfo as $zone): $selected=($zone->zones_id ==$default_zone_id)? 'selected':'';
 							$zone_name=$zone->zone_name;
 							 if (function_exists('icl_register_string')){
@@ -212,7 +212,7 @@ class widget_location_for_country extends WP_Widget {
 				<li>
 					<form name="widget_multicity_form" id="widget_multicity_form" action="<?php echo home_url( '/' ); ?>" method="post">
 						<select name="widget_city" id="widget_city">
-							<option value=""><?php _e('All Cities',LDOMAIN);?></option>
+							<option value=""><?php _e('All Cities','templatic');?></option>
 						<?php foreach($cityinfo as $city): $selected=($city->city_id ==$default_city_id)? 'selected':'';
 								   $cityname=$city->cityname;
 								   if (function_exists('icl_register_string')){
@@ -242,7 +242,7 @@ class widget_location_for_country extends WP_Widget {
 		$title = strip_tags($instance['title']);
 		$desc1 = ($instance['desc1']);
 		?>
-		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php echo __('Widget Title',LMADMINDOMAIN);?>: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php echo __('Widget Title','templatic-admin');?>: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
 		<?php
 	}
 }
@@ -253,12 +253,12 @@ class widget_location_for_cities extends WP_Widget {
 	
 	function widget_location_for_cities() {
 		/*Constructor*/
-		$widget_ops = array('classname' => 'Multi City Options', 'description' => __('Displays a drop down for city. Works best in sidebar areas.',LMADMINDOMAIN) );
-		$this->WP_Widget('widget_post_city_id', __('T &rarr; City DropDown',LMADMINDOMAIN), $widget_ops);
+		$widget_ops = array('classname' => 'Multi City Options', 'description' => __('Displays a drop down for city. Works best in sidebar areas.','templatic-admin') );
+		$this->WP_Widget('widget_post_city_id', __('T &rarr; City DropDown','templatic-admin'), $widget_ops);
 	}
 	function widget($args, $instance) {
 		global $wpdb,$country_table,$zones_table,$multicity_table;
-		$title = empty($instance['title']) ? __('Multicity',LMADMINDOMAIN) : apply_filters('widget_title', $instance['title']);
+		$title = empty($instance['title']) ? __('Multicity','templatic-admin') : apply_filters('widget_title', $instance['title']);
 		if(!session_id())
 			session_start();
 			
@@ -311,7 +311,7 @@ class widget_location_for_cities extends WP_Widget {
 				<li>
 					<form name="widget_multicity_form" id="widget_multicity_form" action="<?php echo home_url( '/' ); ?>" method="post">
 						<select name="widget_city" id="widget_city">
-							<option value=""><?php _e('All Cities',LDOMAIN);?></option>
+							<option value=""><?php _e('All Cities','templatic');?></option>
 						<?php foreach($cityinfo as $city): $selected=($city->city_id ==$default_city_id)? 'selected':'';
 								   $cityname=$city->cityname;
 								   if (function_exists('icl_register_string')) {
@@ -341,7 +341,7 @@ class widget_location_for_cities extends WP_Widget {
 		$title = strip_tags($instance['title']);
 		$desc1 = ($instance['desc1']);
 		?>
-		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php echo __('Widget Title',LMADMINDOMAIN);?>: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php echo __('Widget Title','templatic-admin');?>: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></label></p>
 		<?php
 	}
 }

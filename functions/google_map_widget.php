@@ -8,8 +8,8 @@ function directory_googlemap_widgets_init(){
 /* BOF - Home page Google map widget - FOr multicity */
 class widget_googlemap_homepage extends WP_Widget {
 	function widget_googlemap_homepage() {	
-		$widget_ops = array('classname' => 'widget Google Map in Home page', 'description' => __('Display a Google map with custom icons and marker clusters while operating multiple cities. Widget works best inside the Homepage Slider or Homepage - Main Content area.',LMADMINDOMAIN) );		
-		$this->WP_Widget('googlemap_homepage', __('T &rarr; Homepage Map - multi city',LMADMINDOMAIN), $widget_ops);
+		$widget_ops = array('classname' => 'widget Google Map in Home page', 'description' => __('Display a Google map with custom icons and marker clusters while operating multiple cities. Widget works best inside the Homepage Slider or Homepage - Main Content area.','templatic-admin') );		
+		$this->WP_Widget('googlemap_homepage', __('T &rarr; Homepage Map - multi city','templatic-admin'), $widget_ops);
 	}
 	function widget($arg, $instance) {
 		global $current_cityinfo,$clustering,$city_category_id;
@@ -108,11 +108,11 @@ class widget_googlemap_homepage extends WP_Widget {
                 <div class="map_loading_div map_loading_div_bg" style="display: none;"></div>
                	<div id="map_canvas" style="width: 100%; height:<?php echo $height;?>px" class="map_canvas"></div>               
                     
-                    <div id="map_marker_nofound"><?php echo '<p>';_e('Your selected category does not have any records at your current location.',LDOMAIN);echo '</p>'; ?></div>     
+                    <div id="map_marker_nofound"><?php echo '<p>';_e('Your selected category does not have any records at your current location.','templatic');echo '</p>'; ?></div>     
                </div>             
               
                <form id="ajaxform" name="slider_search" class="pe_advsearch_form" action="javascript:void(0);"  onsubmit="return(new_googlemap_ajaxSearch());">
-                	<div class="paf_search"><input  type="text" class="" id="search_string" name="search_string" value="" placeholder="<?php _e('Title or Keyword',LDOMAIN);?>" onclick="this.placeholder=''" onmouseover="this.placeholder='<?php _e('Title or Keyword',LDOMAIN);?>'"/></div>
+                	<div class="paf_search"><input  type="text" class="" id="search_string" name="search_string" value="" placeholder="<?php _e('Title or Keyword','templatic');?>" onclick="this.placeholder=''" onmouseover="this.placeholder='<?php _e('Title or Keyword','templatic');?>'"/></div>
                
                <?php if($post_info):
 			   $tevolution_post= apply_filters('tevolution_custom_post_type',get_option('templatic_custom_post'));	
@@ -180,7 +180,7 @@ class widget_googlemap_homepage extends WP_Widget {
 		?>
 	
 		<p>
-		 <label for="<?php echo $this->get_field_id('height'); ?>"><?php echo __('Map Height: <small>(Default is 500px. To change enter a numeric value.)</small>',LMADMINDOMAIN);?>
+		 <label for="<?php echo $this->get_field_id('height'); ?>"><?php echo __('Map Height: <small>(Default is 500px. To change enter a numeric value.)</small>','templatic-admin');?>
 		 <input class="widefat" id="<?php echo $this->get_field_id('height'); ?>" name="<?php echo $this->get_field_name('height'); ?>" type="text" value="<?php echo esc_attr($height); ?>" />
 		 </label>
 	    </p>
@@ -188,7 +188,7 @@ class widget_googlemap_homepage extends WP_Widget {
 		<?php if($clustering) { $checked = "checked=checked"; }else{ $checked =''; } ?>
 		 <label for="<?php echo $this->get_field_id('clustering'); ?>">
 		 <input id="<?php echo $this->get_field_id('clustering'); ?>" name="<?php echo $this->get_field_name('clustering'); ?>" type="checkbox" value="1" <?php echo $checked; ?>/>
-		 <?php echo __('Disable Clustering',LMADMINDOMAIN); ?></label>
+		 <?php echo __('Disable Clustering','templatic-admin'); ?></label>
 	    </p>
 	    <?php
 	}
@@ -305,7 +305,7 @@ function googlemap_initialize(){
 					$image_class=($post_image)?'map-image' :'';					
 						
 					$comment_count= count(get_comments(array('post_id' => $ID)));
-					$review=($comment_count ==1 )? __('review',LDOMAIN):__('reviews',LDOMAIN);	
+					$review=($comment_count ==1 )? __('review','templatic'):__('reviews','templatic');	
 					
 					if(($lat && $lng )&& !in_array($ID,$pids))
 					{ 						

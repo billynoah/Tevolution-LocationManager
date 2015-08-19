@@ -236,6 +236,6 @@ google.maps.event.addDomListener(window, 'load', changeMap);
 	<div class="google-map-wrapper">
 		<div id="map_canvas" class="map_wrap form_row clearfix" style="height:300px;margin-left:218px;position:relative;width:450px;"></div>    	
 	</div>
-    <p class="description"  style="margin-left:218px;"><?php _e('Clicking the above "Set Address on Map" button, you can simply drag the pinpoint to locate the exact address on the map. ',LMADMINDOMAIN);?></p>
+    <p class="description"  style="margin-left:218px;"><?php _e('Clicking the above "Set Address on Map" button, you can simply drag the pinpoint to locate the exact address on the map. ','templatic-admin');?></p>
 </div>
 <?php endif; ?>

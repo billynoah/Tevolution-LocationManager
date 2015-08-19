@@ -49,7 +49,7 @@ function location_before_bulk_upload(){
                                         <div  id="message" class="error" style="padding:10px;width:960px;margin:0 0 10px;">
 									<?php 
                                                   $download = "<a href='".get_bloginfo("url")."/wp-admin/admin.php?page=bulk_upload&ptype=csvdl' style='color:#21759B'>download</a>";
-                                                  _e("csv file structure doesn't match. Please $download sample csv file to see required structure.",LMADMINDOMAIN);
+                                                  _e("csv file structure doesn't match. Please $download sample csv file to see required structure.",'templatic-admin');
                                              ?>
                                         </div>
                                         <?php
@@ -135,7 +135,7 @@ function location_before_bulk_upload(){
 				@unlink($csv_target_path);
 				?>
                     <div class="updated fade" style="padding:10px;width:960px;margin:0 0 10px;">
-					<?php echo __('Imported your MultiCity Csv file successfully.',LMADMINDOMAIN);?>
+					<?php echo __('Imported your MultiCity Csv file successfully.','templatic-admin');?>
                     </div>
                     <?php
 				}/*finish if condition for move upload file*/
@@ -173,7 +173,7 @@ function location_before_bulk_upload(){
 		$wpdb->query("ALTER TABLE $multicity_table AUTO_INCREMENT =1");
 		?>
           <div class="updated fade" style="padding:10px;width:960px;margin:0 0 10px;">
-			<?php echo __('Drop MultiCity entries successfully.',LMADMINDOMAIN);?>
+			<?php echo __('Drop MultiCity entries successfully.','templatic-admin');?>
 		</div>
           <?php
 	}
@@ -185,35 +185,35 @@ add_action('tevolution_after_bulk_upload','location_after_bulk_upload');
 function location_after_bulk_upload(){
 	global $wpdb,$wp_query
 	?>
-     <div class="tevo_sub_title"><?php echo __('CSV City Import',LMADMINDOMAIN);?></div>
+     <div class="tevo_sub_title"><?php echo __('CSV City Import','templatic-admin');?></div>
      <table class="form-table" >
      <form action="" method="post" enctype="multipart/form-data">
-     	<tr><p class="tevolution_desc"><?php echo __('Directly upload all the content of your cities here and check under wp-admin -&gt; Tevolution -&gt; Manage Locations -&gt; Cities. This will help you reduce the manual work of adding each city individually.<br><strong>Tip:</strong> You can directly add/delete your cities their in csv file itself and then upload here, it will save your time.',LMADMINDOMAIN)?></p>
+     	<tr><p class="tevolution_desc"><?php echo __('Directly upload all the content of your cities here and check under wp-admin -&gt; Tevolution -&gt; Manage Locations -&gt; Cities. This will help you reduce the manual work of adding each city individually.<br><strong>Tip:</strong> You can directly add/delete your cities their in csv file itself and then upload here, it will save your time.','templatic-admin')?></p>
           
-          <p><?php echo __('If you want to import cities from GeoPlaces4 to Tevolution-LocationManager plugin with same City ID then',LMADMINDOMAIN); ?>
+          <p><?php echo __('If you want to import cities from GeoPlaces4 to Tevolution-LocationManager plugin with same City ID then','templatic-admin'); ?>
 			<a href="<?php echo home_url()."/wp-admin/admin.php?page=bulk_upload&dropcities=true"; ?>">
-				<?php echo __('Click Here',LMADMINDOMAIN);?>
+				<?php echo __('Click Here','templatic-admin');?>
 			</a>
-			<?php echo __('to drop the current city entries and then import the city CSV exported from your GeoPlaces site here. ',LMADMINDOMAIN); ?></p>
-          	<th><?php echo __('Upload your CSV file',LMADMINDOMAIN);?></th>
+			<?php echo __('to drop the current city entries and then import the city CSV exported from your GeoPlaces site here. ','templatic-admin'); ?></p>
+          	<th><?php echo __('Upload your CSV file','templatic-admin');?></th>
                <td>
                <input type="file" name="bulk_upload_city" id="bulk_upload_city">
                <br/><br/>
-               <input id="submit" class="button button-primary" type="submit" value="<?php echo __('Import csv',LMADMINDOMAIN);?>" name="import_city_csv">
+               <input id="submit" class="button button-primary" type="submit" value="<?php echo __('Import csv','templatic-admin');?>" name="import_city_csv">
 			<?php $sample_download = get_bloginfo("url")."/wp-admin/admin.php?page=bulk_upload&import_city_csv=1";?>
-               <p class="description"><?php echo sprintf(__('Download the <a href="%s">sample CSV file</a> to see the correct structure of the Multicity.csv file. To use bulk upload with custom fields simply add them as new columns inside your .csv file at last(at the end). ',LMADMINDOMAIN),$sample_download);?></p>               
+               <p class="description"><?php echo sprintf(__('Download the <a href="%s">sample CSV file</a> to see the correct structure of the Multicity.csv file. To use bulk upload with custom fields simply add them as new columns inside your .csv file at last(at the end). ','templatic-admin'),$sample_download);?></p>               
                </td>
           </tr>
      </form>
      </table>     
-     <div class="tevo_sub_title"><?php echo __('CSV City Export',LMADMINDOMAIN);?></div>
+     <div class="tevo_sub_title"><?php echo __('CSV City Export','templatic-admin');?></div>
      <table class="form-table" >
      <form action="<?php echo TEVOLUTION_LOCATION_URL;?>functions/location_cities_export_csv.php" method="post" enctype="multipart/form-data">
-     	<tr><p class="tevolution_desc"><?php echo __('Directly download all the city from here and save it on your hard drive.',LMADMINDOMAIN);?></p>
-          	<th><?php echo __('Export City CSV file',LMADMINDOMAIN);?></th>
+     	<tr><p class="tevolution_desc"><?php echo __('Directly download all the city from here and save it on your hard drive.','templatic-admin');?></p>
+          	<th><?php echo __('Export City CSV file','templatic-admin');?></th>
                <td>
                     <input type="hidden" name="export_city" id="export_city" value="1">
-                    <input id="submit" class="button button-primary" type="submit" value="<?php echo __('Export TO csv',LMADMINDOMAIN);?>" name="export_city_csv">
+                    <input id="submit" class="button button-primary" type="submit" value="<?php echo __('Export TO csv','templatic-admin');?>" name="export_city_csv">
                </td>
           </tr>
      </form>
@@ -232,7 +232,7 @@ function directory_after_related_post(){
 	$distance_type=$tmpdata['distance_type'];
 	?>
      <tr>
-          <th><label><?php echo __('Enable distance-aware related posts for',LMADMINDOMAIN);?></label></th>
+          <th><label><?php echo __('Enable distance-aware related posts for','templatic-admin');?></label></th>
           <td>
            <?php $templatic_custom_post = get_option('templatic_custom_post');
 		 	if(!empty($templatic_custom_post) && $templatic_custom_post!=''){
@@ -245,26 +245,26 @@ function directory_after_related_post(){
 			</div>
 			<?php endforeach;
 			}else{
-				echo sprintf(__(' No custom post type has been created at your site yet. Please <a href="?page=%s"> create it </a> to list it here.',LMADMINDOMAIN),'custom_taxonomy');	
+				echo sprintf(__(' No custom post type has been created at your site yet. Please <a href="?page=%s"> create it </a> to list it here.','templatic-admin'),'custom_taxonomy');	
 			}
 			?>
-			<p class="description"><?php echo __('When this option is enabled, related posts will only show if within the distance you set below. The distance is relative to the post currently visited.',LMADMINDOMAIN);?></p>
+			<p class="description"><?php echo __('When this option is enabled, related posts will only show if within the distance you set below. The distance is relative to the post currently visited.','templatic-admin');?></p>
           </td>
      </tr>
 	  <tr>
-          <th><label><?php echo __('Set the distance',LMADMINDOMAIN);?></label></th>
+          <th><label><?php echo __('Set the distance','templatic-admin');?></label></th>
           <td>
                <select id="related_radius" name="related_radius">
-                    <option value="1" <?php if(esc_attr($distance_factor)=='1'){ echo 'selected="selected"';} ?>><?php echo __('1',LMADMINDOMAIN); ?></option>
-                    <option value="5" <?php if(esc_attr($distance_factor)=='5'){ echo 'selected="selected"';} ?>><?php echo __('5',LMADMINDOMAIN); ?></option>
-                    <option value="10" <?php if(esc_attr($distance_factor)=='10'){ echo 'selected="selected"';} ?>><?php echo __('10',LMADMINDOMAIN); ?></option>
-                    <option value="100" <?php if(esc_attr($distance_factor)=='100'){ echo 'selected="selected"';} ?>><?php echo __('100',LMADMINDOMAIN); ?></option>
-                    <option value="1000" <?php if(esc_attr($distance_factor)=='1000'){ echo 'selected="selected"';} ?>><?php echo __('1000',LMADMINDOMAIN); ?></option>
-                    <option value="5000" <?php if(esc_attr($distance_factor)=='5000'){ echo 'selected="selected"';} ?>><?php echo __('5000',LMADMINDOMAIN); ?></option>
+                    <option value="1" <?php if(esc_attr($distance_factor)=='1'){ echo 'selected="selected"';} ?>><?php echo __('1','templatic-admin'); ?></option>
+                    <option value="5" <?php if(esc_attr($distance_factor)=='5'){ echo 'selected="selected"';} ?>><?php echo __('5','templatic-admin'); ?></option>
+                    <option value="10" <?php if(esc_attr($distance_factor)=='10'){ echo 'selected="selected"';} ?>><?php echo __('10','templatic-admin'); ?></option>
+                    <option value="100" <?php if(esc_attr($distance_factor)=='100'){ echo 'selected="selected"';} ?>><?php echo __('100','templatic-admin'); ?></option>
+                    <option value="1000" <?php if(esc_attr($distance_factor)=='1000'){ echo 'selected="selected"';} ?>><?php echo __('1000','templatic-admin'); ?></option>
+                    <option value="5000" <?php if(esc_attr($distance_factor)=='5000'){ echo 'selected="selected"';} ?>><?php echo __('5000','templatic-admin'); ?></option>
                </select>
-               <label><input type="radio" name="distance_type" value="miles"  id="distance_type_miles" <?php if(esc_attr($distance_type)=='miles' || esc_attr($distance_type)==''){ echo 'checked="checked"';} ?>/>&nbsp;<?php echo __('Miles',LMADMINDOMAIN);?></label>&nbsp;
-               <label><input type="radio" name="distance_type" value="kilometer"  id="distance_type_kilometer" <?php if(esc_attr($distance_type)=='kilometer'){ echo 'checked="checked"';} ?>/>&nbsp;<?php echo __('Kilometer',LMADMINDOMAIN);?></label>               
-			<p class="description"><?php echo __('Specify the distance from which related posts will be pulled. This option is functional only if you enabled distance-aware functionality for your post type.',LMADMINDOMAIN);?></p>
+               <label><input type="radio" name="distance_type" value="miles"  id="distance_type_miles" <?php if(esc_attr($distance_type)=='miles' || esc_attr($distance_type)==''){ echo 'checked="checked"';} ?>/>&nbsp;<?php echo __('Miles','templatic-admin');?></label>&nbsp;
+               <label><input type="radio" name="distance_type" value="kilometer"  id="distance_type_kilometer" <?php if(esc_attr($distance_type)=='kilometer'){ echo 'checked="checked"';} ?>/>&nbsp;<?php echo __('Kilometer','templatic-admin');?></label>               
+			<p class="description"><?php echo __('Specify the distance from which related posts will be pulled. This option is functional only if you enabled distance-aware functionality for your post type.','templatic-admin');?></p>
           </td>
      </tr> 
      <?php
@@ -299,10 +299,10 @@ function templatic_edit_location_columns($columns)
 		foreach($location_post_type as $post_type){
 			$posttype=explode(',',$post_type);
 			 if ($typenow==$posttype[0]) :
-				$columns['location']=__('Location',LMADMINDOMAIN);
+				$columns['location']=__('Location','templatic-admin');
 			endif;
 			if(isset($_REQUEST) && $_REQUEST['action']=='inline-save' && $_REQUEST['post_type']==$posttype[0]){
-				$columns['location']=__('Location',LMADMINDOMAIN);
+				$columns['location']=__('Location','templatic-admin');
 			}
 		}
 	}
@@ -394,7 +394,7 @@ function location_post_by_multicity(){
 			 if ($typenow==$posttype[0]) :
 				?>
                     <select name='multi_city_id' id='multi_city_id'>
-                    	<option value=""><?php _e( 'Select a city', LMADMINDOMAIN )?></option>
+                    	<option value=""><?php _e( 'Select a city', 'templatic-admin' )?></option>
                     <?php foreach($countryinfo as $country):?>
                     	<optgroup label="<?php echo $country->country_name?>">
                          <?php

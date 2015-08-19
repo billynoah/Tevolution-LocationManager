@@ -41,12 +41,12 @@ if( !class_exists('WP_Location_Manager_Updates') ) {
 		$remote_version = @$r->new_version;	  
 		 if (version_compare($this->plugin_version , $remote_version, '<'))
 		 {	
-			$new_version = version_compare($this->plugin_version , $remote_version, '<') ? __('There is a new version of Tevolution-Location Manager plugin available ', LMADMINDOMAIN)  : '';
+			$new_version = version_compare($this->plugin_version , $remote_version, '<') ? __('There is a new version of Tevolution-Location Manager plugin available ', 'templatic-admin')  : '';
 			  
 			  $ajax_url = esc_url( add_query_arg( array( 'slug' => 'location-manager', 'action' => 'location-manager' , '_ajax_nonce' => wp_create_nonce( 'location-manager' ), 'TB_iframe' => true ,'width'=>500,'height'=>400), admin_url( 'admin-ajax.php' ) ) );
 			  $file='Tevolution-LocationManager/location-manager.php';
 			  $download= wp_nonce_url( self_admin_url('update.php?action=upgrade-plugin&plugin=').$file, 'upgrade-plugin_' . $file);
-			echo '<tr class="plugin-update-tr"><td colspan="3" class="plugin-update"><div class="update-message">' . $new_version .  ' <a href="'.$ajax_url.'" class="thickbox" title="Templatic directory Update">'.__('update now',LMADMINDOMAIN).'</a></div></td></tr>';
+			echo '<tr class="plugin-update-tr"><td colspan="3" class="plugin-update"><div class="update-message">' . $new_version .  ' <a href="'.$ajax_url.'" class="thickbox" title="Templatic directory Update">'.__('update now','templatic-admin').'</a></div></td></tr>';
 		
 		 }
 	}
@@ -89,11 +89,11 @@ if( !class_exists('WP_Location_Manager_Updates') ) {
     		$raw_response = wp_remote_post( $this->api_url, $request_string );
     		
     		if( is_wp_error($raw_response) ){
-    			$res = new WP_Error('plugins_api_failed', __('An Unexpected HTTP Error occurred during the API request.</p> <p><a href="?" onclick="document.location.reload(); return false;">Try again</a>', LMADMINDOMAIN), $raw_response->get_error_message());
+    			$res = new WP_Error('plugins_api_failed', __('An Unexpected HTTP Error occurred during the API request.</p> <p><a href="?" onclick="document.location.reload(); return false;">Try again</a>', 'templatic-admin'), $raw_response->get_error_message());
     		} else {
     			$res = json_decode($raw_response['body']);
     			if ($res === false)
-    				$res = new WP_Error('plugins_api_failed', __('An unknown error occurred', LMADMINDOMAIN), $raw_response['body']);
+    				$res = new WP_Error('plugins_api_failed', __('An unknown error occurred', 'templatic-admin'), $raw_response['body']);
     		}    		
     		return $res;
     	}

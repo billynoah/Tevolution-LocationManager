@@ -76,7 +76,7 @@ function location_listing_format($post){
 		echo '<ul>';		
 		
 		$comment_count= count(get_comments(array('post_id' => $post->ID)));
-		$review=($comment_count <=1 )? __('review',LDOMAIN):__('reviews',LDOMAIN);
+		$review=($comment_count <=1 )? __('review','templatic'):__('reviews','templatic');
 		?>
           <?php if(current_theme_supports('tevolution_my_favourites') && get_post_type($post->ID)!='post' ):?> 
                <li class="favourite"><?php tevolution_favourite_html();?></li>
@@ -84,7 +84,7 @@ function location_listing_format($post){
                      
 		<li class="review"> <?php echo $comment_count.' <a href="'.get_permalink($post->ID).'#comments">'.$review.'</a>';?></li>
 		<?php if($address!=""):?>
-          <li class='pinpoint'><a id="pinpoint_<?php echo $post->ID;?>" class="ping" href="#map_canvas"><?php _e('Pinpoint',LDOMAIN);?></a></li>               
+          <li class='pinpoint'><a id="pinpoint_<?php echo $post->ID;?>" class="ping" href="#map_canvas"><?php _e('Pinpoint','templatic');?></a></li>               
 		<?php endif;?>
 		<?php
 		echo '</ul>';

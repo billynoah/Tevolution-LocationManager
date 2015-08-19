@@ -161,18 +161,18 @@ function fill_multicity_cmb(str,f){
 	
 }
 jQuery(document).ready(function(){	
-	jQuery("#header_country").change(function(){				
+	jQuery("#header_country").change(function(){
 	    	var country_id = jQuery('#header_country').val();		
 		jQuery.ajax({
 			url:ajaxUrl,
 			type:'POST',
 			data:'action=fill_states_cmb&country_id=' + country_id+'&front=1&header=1',
-			success:function(results) {			
+			success:function(results) {				
 				results=results.split('++');
 				jQuery('#header_zone').html(results[0]);
 				jQuery('#header_city').html(results[1]);
-				if(jQuery('select#header_zone option:selected').val()!=''){					
-					jQuery('.horizontal_location_nav select').trigger('change');		
+				if(jQuery('select#header_zone option:selected').val()!=''){
+					//jQuery('.horizontal_location_nav select#header_city').trigger('change');		
 					jQuery('select#header_zone option:selected').prop('selected',false);
 				}else{					
 					/*header_zone*/

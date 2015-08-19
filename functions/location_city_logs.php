@@ -9,8 +9,8 @@ function location_manage_city_logs($location_tabs){
 			echo '<div class="wrap">';
 			if(isset($_REQUEST['city_id']) && $_REQUEST['city_id']!=''){
 				?>
-                     <h2><?php echo __('City Wise Logs',LMADMINDOMAIN);?>	
-                     <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=location_city_log';?>" title="<?php echo __('Back to city logs',LMADMINDOMAIN);?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to city logs',LMADMINDOMAIN); ?></a>
+                     <h2><?php echo __('City Wise Logs','templatic-admin');?>	
+                     <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=location_city_log';?>" title="<?php echo __('Back to city logs','templatic-admin');?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to city logs','templatic-admin'); ?></a>
                      </h2>
                     <form name="frm_citywise" id="frm_citywise" action="" method="post" >
 				<?php
@@ -24,9 +24,9 @@ function location_manage_city_logs($location_tabs){
                     <?php
 				
 			}else{
-				echo '<h2>'.__('City Logs',LMADMINDOMAIN).'</h2>';
+				echo '<h2>'.__('City Logs','templatic-admin').'</h2>';
 				?>
-                    <p class="tevolution_desc"><?php echo __('Use this section to see how many times was each of your cities visited. This is useful in determining which is your most popular city.',LMADMINDOMAIN);?></p>
+                    <p class="tevolution_desc"><?php echo __('Use this section to see how many times was each of your cities visited. This is useful in determining which is your most popular city.','templatic-admin');?></p>
 				<form name="frm_city_log" id="frm_city_log" action="" method="post" >
 					<?php
 					$location_city_logs = new wp_list_city_logs();
@@ -95,11 +95,11 @@ class wp_list_city_logs extends Tmpl_WP_List_Table
 	{
 		$columns = array(	
 			'cb'      => '<input type="checkbox" />',
-			'title'   =>  __('City Name',LMADMINDOMAIN),
-			'state'   =>  __('State Name',LMADMINDOMAIN),
-			'country' =>  __('Country Name',LMADMINDOMAIN),
-			'count'   =>  __('Total Count',LMADMINDOMAIN),
-			'view'    => __('Views',LMADMINDOMAIN),
+			'title'   =>  __('City Name','templatic-admin'),
+			'state'   =>  __('State Name','templatic-admin'),
+			'country' =>  __('Country Name','templatic-admin'),
+			'count'   =>  __('Total Count','templatic-admin'),
+			'view'    => __('Views','templatic-admin'),
 			);
 		return $columns;
 	}
@@ -239,9 +239,9 @@ class wp_list_citywise_logs extends Tmpl_WP_List_Table
 	function get_columns()
 	{
 		$columns = array(
-			'title'   =>  __('City Name',LMADMINDOMAIN),
-			'ip_address'   =>  __('IP Address',LMADMINDOMAIN),
-			'counter' =>  __('Counter',LMADMINDOMAIN),
+			'title'   =>  __('City Name','templatic-admin'),
+			'ip_address'   =>  __('IP Address','templatic-admin'),
+			'counter' =>  __('Counter','templatic-admin'),
 			);
 		return $columns;
 	}

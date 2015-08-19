@@ -127,7 +127,7 @@ function tcity_directory_map( $atts ) {
                <div class="iprelative">
                	<div id="map_canvas" style="width: 100%; height:<?php echo $heigh;?>px" class="map_canvas"></div>               
                     <div id="map_loading_div" style="width: 100%; height:<?php echo $heigh;?>px; display: none;"></div>                     
-                    <div id="map_marker_nofound"><?php echo '<p>';_e('Your selected category do not have any records yet at your current location.',LMADMINDOMAIN);echo '</p>'; ?></div>     
+                    <div id="map_marker_nofound"><?php echo '<p>';_e('Your selected category do not have any records yet at your current location.','templatic-admin');echo '</p>'; ?></div>     
                </div>   
                 <form id="ajaxform" name="slider_search" class="" action="javascript:void(0);"  onsubmit="return(new_googlemap_ajaxSearch());">
                 		<input type="hidden" name="short_code_city_id" id="short_code_city_id" value="<?php echo $short_code_city_id;?>" />
@@ -332,7 +332,7 @@ function shortcode_googlemap_initialize(){
 						$image_class=($post_image)?'map-image' :'';					
 							
 						$comment_count= count(get_comments(array('post_id' => $ID)));
-						$review=($comment_count ==1 )? __('review',LDOMAIN):__('reviews',LDOMAIN);	
+						$review=($comment_count ==1 )? __('review','templatic'):__('reviews','templatic');	
 						
 						if(($lat && $lng )&& !in_array($ID,$pids))
 						{ 						

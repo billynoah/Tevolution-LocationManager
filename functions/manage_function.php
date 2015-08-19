@@ -5,51 +5,51 @@
 
 /* Front end country label name */
 function tmpl_frontend_country_label(){
-	_e('Country',LDOMAIN);
+	_e('Country','templatic');
 }
 /* Front end select country option label */
 function tmpl_frontend_select_country_option(){
-	_e('Select Country',LDOMAIN);
+	_e('Select Country','templatic');
 }
 /* Front end state label name */
 function tmpl_frontend_state_label(){
-	_e('State',LDOMAIN);
+	_e('State','templatic');
 }
 /* Front end select state option label */
 function tmpl_frontend_select_state_option(){
-	_e('Select State',LDOMAIN);
+	_e('Select State','templatic');
 }
 /* Front end city label name */
 function tmpl_frontend_city_label(){
-	_e('City',LDOMAIN);
+	_e('City','templatic');
 }
 /* Front end select city option label */
 function tmpl_frontend_select_city_option(){
-	_e('Select City',LDOMAIN);
+	_e('Select City','templatic');
 }
 /* Backend string*/
 function tmpl_backend_country_label(){
-	echo __('Country',LMADMINDOMAIN);
+	echo __('Country','templatic-admin');
 }
 /* Front end select country option label */
 function tmpl_backend_select_country_option(){
-	echo __('Select Country',LMADMINDOMAIN);
+	echo __('Select Country','templatic-admin');
 }
 /* Front end state label name */
 function tmpl_backend_state_label(){
-	echo __('State',LMADMINDOMAIN);
+	echo __('State','templatic-admin');
 }
 /* Front end select state option label */
 function tmpl_backend_select_state_option(){
-	echo __('Select State',LMADMINDOMAIN);
+	echo __('Select State','templatic-admin');
 }
 /* Front end city label name */
 function tmpl_backend_city_label(){
-	echo __('City',LMADMINDOMAIN);
+	echo __('City','templatic-admin');
 }
 /* Front end select city option label */
 function tmpl_backend_select_city_option(){
-	echo __('Select City',LMADMINDOMAIN);
+	echo __('Select City','templatic-admin');
 }
 /* location manager functions - manage_functions.php */
 add_action('wp_enqueue_scripts','googlemap_script'); /* add google map script*/
@@ -62,11 +62,17 @@ add_action('tevolution_css','tmpl_add_locationplugin_css',11); /* to call the cs
 /*Location plugin stylesheet file enqueue */
 function tmpl_add_locationplugin_css(){
 	global $tev_css;
-	
-	if(!empty($tev_css)){
-		$tev_css = array_merge($tev_css,array(TEVOLUTION_LOCATION_URL.'css/location.css'));
-	}else{
-		$tev_css = array(TEVOLUTION_LOCATION_URL.'css/location.css');
+	if (function_exists('tmpl_wp_is_mobile') && !tmpl_wp_is_mobile()) 
+	{
+		if(!empty($tev_css)){
+			$tev_css = array_merge($tev_css,array(TEVOLUTION_LOCATION_URL.'css/location.css'));
+		}else{
+			$tev_css = array(TEVOLUTION_LOCATION_URL.'css/location.css');
+		}
+	}
+	else
+	{
+		wp_enqueue_style('location_css',TEVOLUTION_LOCATION_URL.'css/location.css');
 	}
 }
 
@@ -88,9 +94,9 @@ function location_function_style()
 	}
 	?>
 	<script type="text/javascript" async>
-		var loading = '<?php _e('Loading...',LDOMAIN); ?>';
+		var loading = '<?php _e('Loading...','templatic'); ?>';
 		var ajaxUrl = "<?php echo esc_js( $site_url); ?>";
-		var default_city_text = '<?php _e('Default City',LMADMINDOMAIN);?>';
+		var default_city_text = '<?php _e('Default City','templatic-admin');?>';
 	</script>
 	<?php
 	wp_enqueue_script('location_script',TEVOLUTION_LOCATION_URL.'js/location_script.min.js',array( 'jquery' ),'',false);
@@ -428,7 +434,7 @@ function location_settings_option() {
 		return;
  
 	$args = array(
-		'label' => __('Location setting fields per page', LMADMINDOMAIN),
+		'label' => __('Location setting fields per page', 'templatic-admin'),
 		'default' => 25,
 		'option' => 'location_setting_fields_per_page'
 	);
@@ -444,8 +450,8 @@ function location_plugin_settings(){
                                         update_option('disable_city_log',$_POST['disable_city_log']);
                          }
 	echo '<div id="icon-options-general" class="icon32 clearfix"><br></div>';
-	echo "<h1 class=''>".__('Locations',LMADMINDOMAIN)."</h1>";
-	echo '<p class="tevolution_desc">'.__('Using this section you will be able to define country, states and cities which can then be used to filter content on your site. Posts, listings or events added for one city will not show for other cities. Read more about <strong>how to manage cities <a href="http://templatic.com/docs/directory-theme-guide/#multiplecities">here</a></strong>.',LMADMINDOMAIN).'</p>';
+	echo "<h1 class=''>".__('Locations','templatic-admin')."</h1>";
+	echo '<p class="tevolution_desc">'.__('Using this section you will be able to define country, states and cities which can then be used to filter content on your site. Posts, listings or events added for one city will not show for other cities. Read more about <strong>how to manage cities <a href="http://templatic.com/docs/directory-theme-guide/#multiplecities">here</a></strong>.','templatic-admin').'</p>';
 	echo '<h2 class="nav-tab-wrapper">';
 		$tabs=isset($_REQUEST['location_tabs'])?$_REQUEST['location_tabs']:'';
 		location_settings_tabs($tabs);
@@ -459,16 +465,16 @@ function location_plugin_settings(){
  */
 function location_settings_tabs($current = 'location_manage_locations'){
 	if(get_option('disable_city_log')!=1){
-		$tabs = apply_filters('location_settings_tabs', array('location_manage_locations' => __('Manage Locations',LMADMINDOMAIN),'countries_manage_locations' => __('Countries',LMADMINDOMAIN),
-									'state_manage_locations' => __('States',LMADMINDOMAIN),
-									'city_manage_locations' => __('Cities',LMADMINDOMAIN)));
+		$tabs = apply_filters('location_settings_tabs', array('location_manage_locations' => __('Manage Locations','templatic-admin'),'countries_manage_locations' => __('Countries','templatic-admin'),
+									'state_manage_locations' => __('States','templatic-admin'),
+									'city_manage_locations' => __('Cities','templatic-admin')));
 	}else{
 		$tabs = apply_filters('location_settings_tabs', array(
-									'location_manage_locations' => __('Manage Locations',LMADMINDOMAIN),
-									'countries_manage_locations' => __('Countries',LMADMINDOMAIN),
-									'state_manage_locations' => __('States',LMADMINDOMAIN),
-									'city_manage_locations' => __('Cities',LMADMINDOMAIN),
-									'location_city_log'=>__('City Logs',LMADMINDOMAIN),
+									'location_manage_locations' => __('Manage Locations','templatic-admin'),
+									'countries_manage_locations' => __('Countries','templatic-admin'),
+									'state_manage_locations' => __('States','templatic-admin'),
+									'city_manage_locations' => __('Cities','templatic-admin'),
+									'location_city_log'=>__('City Logs','templatic-admin'),
 									));
 	}	
     $links = array();
@@ -493,7 +499,7 @@ function location_settings_tabs($current = 'location_manage_locations'){
 add_action('cunstom_field_type','multicity_custom_field_type');
 function multicity_custom_field_type($post_id){	
 	?>
-	<option value="multicity" <?php if(get_post_meta($post_id,"ctype",true)=='multicity'){ echo 'selected="selected"';}?>><?php _e('Multi City',LMADMINDOMAIN);?></option>
+	<option value="multicity" <?php if(get_post_meta($post_id,"ctype",true)=='multicity'){ echo 'selected="selected"';}?>><?php _e('Multi City','templatic-admin');?></option>
 	<?php
 }
 /*
@@ -523,9 +529,9 @@ function location_multicity_custom_fieldtype($key,$val,$post_type){
 
 	if($type=='multicity' && in_array($milti_city_post,$location_post_type)){
 		/*validation info array for country, state, city */
-		$validation_info[] = array('title'=>__('Select Country',LDOMAIN),'name'=> 'country_id','espan'=> 'country_id_error','type'=> 'select','text'=> __('Please select Country',LDOMAIN),'is_require' => 1,					'validation_type'=> 'require');
-		$validation_info[] = array('title' => __('Select State',LDOMAIN),'name'=> 'zones_id','espan'=> 'zones_id_error','type'=> 'select','text'=> __('Please select State',LDOMAIN),'is_require'=> 1,'validation_type'=> 'require');
-		$validation_info[] = array('title'=> __('Select City',LDOMAIN),'name'=> 'city_id','espan'=> 'city_id_error','type'=> 'select','text'=> __('Please select City',LDOMAIN),'is_require'=> 1,'validation_type'=> 'require');
+		$validation_info[] = array('title'=>__('Select Country','templatic'),'name'=> 'country_id','espan'=> 'country_id_error','type'=> 'select','text'=> __('Please select Country','templatic'),'is_require' => 1,					'validation_type'=> 'require');
+		$validation_info[] = array('title' => __('Select State','templatic'),'name'=> 'zones_id','espan'=> 'zones_id_error','type'=> 'select','text'=> __('Please select State','templatic'),'is_require'=> 1,'validation_type'=> 'require');
+		$validation_info[] = array('title'=> __('Select City','templatic'),'name'=> 'city_id','espan'=> 'city_id_error','type'=> 'select','text'=> __('Please select City','templatic'),'is_require'=> 1,'validation_type'=> 'require');
 		/* Finish validation info array for country, state, city */		
 		if(isset($_REQUEST['pid']) && $_REQUEST['pid']!='')
 		{
@@ -954,7 +960,7 @@ function tev_ajax_headerlocation(){
 	$city_slug=get_option('location_multicity_slug');
 	$multi_city=($city_slug)? $city_slug : 'city';
 	?>
-	<div class="my_nearest_city"><a href="<?php echo get_bloginfo( 'url' )."?find_city=nearest"; ?>"><?php _e('My Nearest City',LDOMAIN);?></a></div>
+	<div class="my_nearest_city"><a href="<?php echo get_bloginfo( 'url' )."?find_city=nearest"; ?>"><?php _e('My Nearest City','templatic');?></a></div>
     <?php do_action('horizontal_before_location_nav');?>
 	<ul class="horizontal_location_nav">						
 		<?php
@@ -1063,7 +1069,7 @@ function location_header_navigation(){
 	?>
 	<!-- City name link -->
 	<div id="loc_city_link" class="toggle_handler <?php echo $class_name?>" data-location="<?php echo $directory_citylocation_view; ?>">
-		<a id="directorytab"  href="#" ><?php echo ($current_cityinfo['country_flg']!='')? '<img src="'.$current_cityinfo['country_flg'].'"  width="18" height="12" alt="'.$current_cityinfo['cityname'].'"/> ':'';echo ($current_cityinfo['cityname']!='')? $cityname:_e('Location',LDOMAIN);?>
+		<a id="directorytab"  href="#" ><?php echo ($current_cityinfo['country_flg']!='')? '<img src="'.$current_cityinfo['country_flg'].'"  width="18" height="12" alt="'.$current_cityinfo['cityname'].'"/> ':'';echo ($current_cityinfo['cityname']!='')? $cityname:_e('Location','templatic');?>
 		<i class="fa fa-angle-down"></i></a>
 	</div>
 	<?php
@@ -1109,7 +1115,7 @@ function location_header_navigation(){
 	               	<?php do_action('horizontal_dropdown_before_location_nav');?>
                     <ul class="horizontal_location_nav">
 					<li>
-						<a href="<?php echo get_bloginfo( 'url' )."?find_city=nearest"; ?>"><?php _e('My Nearest City',LDOMAIN);?></a>
+						<a href="<?php echo get_bloginfo( 'url' )."?find_city=nearest"; ?>"><?php _e('My Nearest City','templatic');?></a>
 					</li>
                     <?php if($location_options!='location_for_country' && $location_options!='location_for_cities' && isset($countryinfo)):?>
 						<li>
@@ -1150,6 +1156,7 @@ function location_header_navigation(){
 										$cityinfo = $wpdb->get_results($wpdb->prepare("SELECT * FROM $multicity_table where country_id=%d and zones_id=%d order by cityname ASC",$country_id,$zones_id));
 									}elseif($location_options=='location_for_cities'){
 										$city_ids=$wpdb->get_results("SELECT GROUP_CONCAT(distinct meta_value) as city_ids from {$wpdb->prefix}postmeta as pm,{$wpdb->prefix}posts as p where pm.post_id=p.ID AND p.post_status='publish' AND pm.meta_key = 'post_city_id'");
+										$cityids = '';
 										if($city_ids[0]->city_ids){
 											foreach($city_ids as $ids){
 												$cityids.=$ids->city_ids.",";
@@ -1158,7 +1165,7 @@ function location_header_navigation(){
 
 											
 											/* fetch the all cities except empty */
-												$cityinfo = $wpdb->get_results("SELECT  distinct  mc.city_id,c.country_id,c.country_name,mc.cityname as cityname, mc.city_slug as city_slug   FROM $country_table c,$multicity_table mc where mc.city_id in('$cityids') AND c.`country_id`=mc.`country_id`  AND c.is_enable=1 order by mc.cityname ASC");
+											$cityinfo = $wpdb->get_results("SELECT  distinct  mc.city_id,c.country_id,c.country_name,mc.cityname as cityname, mc.city_slug as city_slug   FROM $country_table c,$multicity_table mc where mc.city_id in('$cityids') AND c.`country_id`=mc.`country_id`  AND c.is_enable=1 order by mc.cityname ASC");
 										}
 									}
 									 /* Get the only one city then selected city by default */
@@ -1223,7 +1230,7 @@ function nearest_location_set(){
 		if(!session_id())
 			session_start();
 		echo '<div id="nearest_city_load" style="display:none;"><p class="loading_msg"><i class="fa fa-circle-o-notch fa-spin"></i>';
-		_e('Please wait, We are taking you to your nearest city.',LDOMAIN);
+		_e('Please wait, We are taking you to your nearest city.','templatic');
 		echo '</p></div>';
 		if(!isset($_COOKIE['c_latitude']) && !isset($_COOKIE['c_longitude'])): ?>
 		<script  type="text/javascript" async src="<?php echo $http; ?>gmaps-samples-v3.googlecode.com/svn/trunk/geolocate/geometa.js"></script>
@@ -1314,13 +1321,13 @@ function tev_before_permaliknk_frmrow_(){
 	if($prm ==1){ $checked = "checked=checked"; }else{ $checked = ""; }
 ?>
 	<tr>
-		<th><?php echo __('City Base In Category Pages',LMADMINDOMAIN);?></th>
+		<th><?php echo __('City Base In Category Pages','templatic-admin');?></th>
 		<td>
 		<div class="input-switch">
 			<input type="checkbox" name="tev_lm_new_city_permalink" id="tev_lm_new_city_permalink" value="1" <?php echo $checked; ?>/>
-			<label for="tev_lm_new_city_permalink"><?php echo __('Enable',LMADMINDOMAIN);?></label>
+			<label for="tev_lm_new_city_permalink"><?php echo __('Enable','templatic-admin');?></label>
 		</div>
-		<p class="description"><?php echo __('Enabling this will include the city slug and city name inside category URLs, allowing you to link to a category inside a specific city.<br/> <strong>Do not enable this</strong> if your site has already been indexed by Google as those old links will lead to a 404 page.',LMADMINDOMAIN);?></p>
+		<p class="description"><?php echo __('Enabling this will include the city slug and city name inside category URLs, allowing you to link to a category inside a specific city.<br/> <strong>Do not enable this</strong> if your site has already been indexed by Google as those old links will lead to a 404 page.','templatic-admin');?></p>
 		</td>
 	</tr>
 <?php 

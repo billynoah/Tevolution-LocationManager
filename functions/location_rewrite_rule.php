@@ -227,16 +227,25 @@ function templatic_create_permalinks($permalink, $post, $leavename) {
 		$pcity_id=$current_cityinfo['city_id'];
 	}
 	
-	if($pcity_id!=''){
-		/* after instant search the url of mulitple selected city post does not return the url of currently selected city added the  'tevolution_autocomplete_callBack' in condition*/
-		if(((!is_front_page() && !is_home() )&& (is_admin() || (defined('DOING_AJAX') && DOING_AJAX) || is_singular() || is_search() || (isset($_REQUEST['page']) && $_REQUEST['page']=='success') || strpos($_SERVER['REQUEST_URI'],'sitemap') !== false  || strpos($_SERVER['REQUEST_URI'],'feed') !== false))  && (is_admin() && @$_REQUEST['action'] != 'tevolution_autocomplete_callBack' && @$_REQUEST['action'] != 'googlemap_initialize'))
-		{
+	/* check if city is exists or not */
+	$is_pcity_exists = $wpdb->get_var("SELECT city_slug FROM $multicity_db_table_name WHERE city_id =\"$pcity_id\"");
+	
+	
+	if($pcity_id!='' && $is_pcity_exists){
+		/* customization start for global location urls */
+		if(is_plugin_active('Directory-GlobalLocation/directory-globallocation.php')){
 			$city = strtolower($wpdb->get_var("SELECT city_slug FROM $multicity_db_table_name WHERE city_id =\"$pcity_id\""));
-		}elseif(is_search() || (is_admin() && @$_REQUEST['action'] == 'tevolution_autocomplete_callBack') || strpos($_SERVER['REQUEST_URI'],'feed') !== false){
-			$city = strtolower($wpdb->get_var("SELECT city_slug FROM $multicity_db_table_name WHERE city_id =\"$pcity_id\""));
-		}
-		else{
-			$city = ($current_cityinfo['city_slug']!='' && !is_author())? $current_cityinfo['city_slug']:strtolower($wpdb->get_var("SELECT city_slug FROM $multicity_db_table_name WHERE city_id =\"$pcity_id\""));
+		}else{ /* customization end */
+			/* after instant search the url of mulitple selected city post does not return the url of currently selected city added the  'tevolution_autocomplete_callBack' in condition*/
+			if(((!is_front_page() && !is_home() )&& (is_admin() || (defined('DOING_AJAX') && DOING_AJAX) || is_singular() || is_search() || (isset($_REQUEST['page']) && $_REQUEST['page']=='success') || strpos($_SERVER['REQUEST_URI'],'sitemap') !== false  || strpos($_SERVER['REQUEST_URI'],'feed') !== false))  && (is_admin() && @$_REQUEST['action'] != 'tevolution_autocomplete_callBack' && @$_REQUEST['action'] != 'googlemap_initialize') || strpos($_SERVER['REQUEST_URI'],'sitemap') !== false)
+			{
+				$city = strtolower($wpdb->get_var("SELECT city_slug FROM $multicity_db_table_name WHERE city_id =\"$pcity_id\""));
+			}elseif(is_search() || (is_admin() && @$_REQUEST['action'] == 'tevolution_autocomplete_callBack')){
+				$city = strtolower($wpdb->get_var("SELECT city_slug FROM $multicity_db_table_name WHERE city_id =\"$pcity_id\""));
+			}
+			else{
+				$city = ($current_cityinfo['city_slug']!='' && !is_author())? $current_cityinfo['city_slug']:strtolower($wpdb->get_var("SELECT city_slug FROM $multicity_db_table_name WHERE city_id =\"$pcity_id\""));
+			}
 		}
 	}else{
 		$city = 'na';
@@ -247,12 +256,12 @@ function templatic_create_permalinks($permalink, $post, $leavename) {
 	/* get the settings from custom permalink settings */
 	$tevolution_taxonomies_data=get_option('tevolution_taxonomies_rules_data');
 	if(@$tevolution_taxonomies_data['tevolution_location_city_remove']==1){
+		
 		$permalink = str_replace('%city%', $city, $permalink);
-		$permalink = str_replace($multi_city.'/', '', $permalink);
+		$permalink = str_replace('/'.$multi_city.'/', '/', $permalink);
 	}else{
 		$permalink = str_replace('%city%', $city, $permalink);
 	}
-	
 	return $permalink;
 }
 /* Commnet post redirect link with location manager*/

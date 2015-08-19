@@ -69,8 +69,11 @@ function location_pre_get_posts($query){
 				$flg=1;
 			}
 			if(isset($query->query_vars['post_type']) && $query->query_vars['post_type']!='' && !empty($location_post_type)){
-				if (strstr($location_post_type,$query->query_vars['post_type'])) {
-				   $flg=1;
+				/* check post types is set for locations or not */
+				if($query->query_vars['post_type']){
+					if (strstr($location_post_type,$query->query_vars['post_type'])) {
+					   $flg=1;
+					}
 				}
 			}else{
 				if(!empty($location_post_type)){

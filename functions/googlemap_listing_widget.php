@@ -11,8 +11,8 @@ function tmpl_category_page_map(){
 
 class widget_category_googlemap_widget extends WP_Widget {
 	function widget_category_googlemap_widget() {	
-		$widget_ops = array('classname' => 'widget Google Map in Listing page', 'description' => __('Show a map on category pages while operating multiple cities. Use in category page sidebar and category page - below header areas.',LMADMINDOMAIN) );		
-		$this->WP_Widget('category_googlemap', __('T &rarr; Category Page Map - multi city',LMADMINDOMAIN), $widget_ops);
+		$widget_ops = array('classname' => 'widget Google Map in Listing page', 'description' => __('Show a map on category pages while operating multiple cities. Use in category page sidebar and category page - below header areas.','templatic-admin') );		
+		$this->WP_Widget('category_googlemap', __('T &rarr; Category Page Map - multi city','templatic-admin'), $widget_ops);
 	}
 	function widget($args, $instance) {		
       	$heigh = empty($instance['heigh']) ? 425 : apply_filters('widget_heigh', $instance['heigh']);
@@ -157,7 +157,7 @@ class widget_category_googlemap_widget extends WP_Widget {
 					
 				$image_class=($post_image)?'map-image' :'';	
 				$comment_count= count(get_comments(array('post_id' => $ID)));
-				$review=($comment_count ==1 )? __('review',LDOMAIN):__('reviews',LDOMAIN);
+				$review=($comment_count ==1 )? __('review','templatic'):__('reviews','templatic');
 				if($lat && $lng && !in_array($post_id,$pids))
 				{ 
 					if(!isset($more)){ $more =''; }
@@ -374,14 +374,14 @@ class widget_category_googlemap_widget extends WP_Widget {
 		?>
 	
 		<p>
-			<label for="<?php echo $this->get_field_id('heigh'); ?>"><?php  echo __('Map Height: <small>(Default is 500px. To change enter a numeric value.)</small>',LMADMINDOMAIN);?>
+			<label for="<?php echo $this->get_field_id('heigh'); ?>"><?php  echo __('Map Height: <small>(Default is 500px. To change enter a numeric value.)</small>','templatic-admin');?>
 			<input class="widefat" id="<?php echo $this->get_field_id('heigh'); ?>" name="<?php echo $this->get_field_name('heigh'); ?>" type="text" value="<?php echo esc_attr($heigh); ?>" />
 			</label>
 	    </p>
 		<p>
 		<?php if($clustering) { $checked = "checked=checked"; }else{ $checked =''; } ?>
 			<label for="<?php echo $this->get_field_id('clustering'); ?>">
-			<input  id="<?php echo $this->get_field_id('clustering'); ?>" name="<?php echo $this->get_field_name('clustering'); ?>" type="checkbox" value="1" <?php echo $checked; ?>/>&nbsp;<?php echo __('Disable Clustering',LMADMINDOMAIN);?></label>
+			<input  id="<?php echo $this->get_field_id('clustering'); ?>" name="<?php echo $this->get_field_name('clustering'); ?>" type="checkbox" value="1" <?php echo $checked; ?>/>&nbsp;<?php echo __('Disable Clustering','templatic-admin');?></label>
 	    </p>
 		<p>
 		   <label id="<?php echo $this->get_field_id('show_all_posts'); ?>"><input type="checkbox" id="<?php echo $this->get_field_id('show_all_posts'); ?>" name="<?php echo $this->get_field_name('show_all_posts'); ?>" value="yes" <?php if(@$show_all_posts =='yes') echo 'checked';?>/>&nbsp;<?php echo __('Show all posts on category map',ADMINDOMAIN);?></label>

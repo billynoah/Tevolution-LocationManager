@@ -86,7 +86,7 @@ function GetCategories_fn_callback(){
 		$_COOKIE['_icl_current_language']=$_REQUEST['lang'];
 	}
 	if(empty($_REQUEST['post_type']) || $_REQUEST['post_type']==""){
-		echo '<ul><li>'.__("Please select any post type.",LMADMINDOMAIN).'</li></ul>';
+		echo '<ul><li>'.__("Please select any post type.",'templatic-admin').'</li></ul>';
 		exit;
 	}
 	$my_post_type = explode(",",$_REQUEST['post_type']);
@@ -145,24 +145,24 @@ function location_selection_option(){
 	if($location_options =='location_for_country' ){ $style="style="; }else{$style="style=display:none;"; }
 	?>
      <tr class="directory_city_option">
-		<th><label><?php echo __('City selector style',LMADMINDOMAIN);?> </label></th>
+		<th><label><?php echo __('City selector style','templatic-admin');?> </label></th>
 		<td>
 		<fieldset>
-		  <label for="location_asdropdown"><input type="radio" id="location_asdropdown" name="directory_citylocation_view" value="location_asdropdown" <?php if($directory_citylocation_view=='location_asdropdown'){echo 'checked';}?> />&nbsp;<?php echo __('Dropdowns',LMADMINDOMAIN);?>&nbsp;&nbsp;</label>
-		  <label for="location_aslink"><input type="radio" id="location_aslink" name="directory_citylocation_view" value="location_aslink" <?php if($directory_citylocation_view=='location_aslink'){echo 'checked';}?>/>&nbsp;<?php echo __('Links',LMADMINDOMAIN);?>&nbsp;&nbsp;</label>
+		  <label for="location_asdropdown"><input type="radio" id="location_asdropdown" name="directory_citylocation_view" value="location_asdropdown" <?php if($directory_citylocation_view=='location_asdropdown'){echo 'checked';}?> />&nbsp;<?php echo __('Dropdowns','templatic-admin');?>&nbsp;&nbsp;</label>
+		  <label for="location_aslink"><input type="radio" id="location_aslink" name="directory_citylocation_view" value="location_aslink" <?php if($directory_citylocation_view=='location_aslink'){echo 'checked';}?>/>&nbsp;<?php echo __('Links','templatic-admin');?>&nbsp;&nbsp;</label>
 		</fieldset>
-		<p class="description"><?php echo __('City selector is used to change the current city. It is located inside the header. ',LMADMINDOMAIN);?></p>
+		<p class="description"><?php echo __('City selector is used to change the current city. It is located inside the header. ','templatic-admin');?></p>
         </td>
      </tr>
 	 <tr class="directory_city_option">
-		<th><label><?php echo __('City selector levels',LMADMINDOMAIN);?> </label></th>
-		<td><fieldset><label for="location_default"><input type="radio" id="location_default" name="location_options" value="location_default" <?php if($location_options=='location_default'){echo 'checked';}?>  onclick="location_for_country_(this.id);"/>&nbsp;<?php echo __('All Countries',LMADMINDOMAIN);?>&nbsp;&nbsp;</label>
-		<label for="location_for_country"><input type="radio" id="location_for_country" name="location_options" value="location_for_country" <?php if($location_options=='location_for_country'){echo 'checked';}?> onclick="location_for_country_(this.id);"/>&nbsp;<?php echo __('One Country',LMADMINDOMAIN);?>&nbsp;&nbsp;</label>
+		<th><label><?php echo __('City selector levels','templatic-admin');?> </label></th>
+		<td><fieldset><label for="location_default"><input type="radio" id="location_default" name="location_options" value="location_default" <?php if($location_options=='location_default'){echo 'checked';}?>  onclick="location_for_country_(this.id);"/>&nbsp;<?php echo __('All Countries','templatic-admin');?>&nbsp;&nbsp;</label>
+		<label for="location_for_country"><input type="radio" id="location_for_country" name="location_options" value="location_for_country" <?php if($location_options=='location_for_country'){echo 'checked';}?> onclick="location_for_country_(this.id);"/>&nbsp;<?php echo __('One Country','templatic-admin');?>&nbsp;&nbsp;</label>
 		  <select id="directory_country_id" name="directory_country_id" <?php echo $style; ?>>
 				<?php echo $options; ?>
 		  </select>
-		<label for="location_for_cities"><input type="radio" id="location_for_cities" name="location_options" value="location_for_cities" <?php if($location_options=='location_for_cities'){echo 'checked';}?>  onclick="location_for_country_(this.id);"/>&nbsp;<?php echo __('Only Cities',LMADMINDOMAIN);?>&nbsp;&nbsp;</label></fieldset>
-		<p class="description"><?php echo __('1) Displays a 3-level city selector Country > State > City with ability to change country. </br> 2) One Country: Displays a 2-level city selector State > City without ability to change country. </br> 3) Only Cities: Displays a 1-level city selector without countries or states.',LMADMINDOMAIN);?></p>	</td>
+		<label for="location_for_cities"><input type="radio" id="location_for_cities" name="location_options" value="location_for_cities" <?php if($location_options=='location_for_cities'){echo 'checked';}?>  onclick="location_for_country_(this.id);"/>&nbsp;<?php echo __('Only Cities','templatic-admin');?>&nbsp;&nbsp;</label></fieldset>
+		<p class="description"><?php echo __('1) Displays a 3-level city selector Country > State > City with ability to change country. </br> 2) One Country: Displays a 2-level city selector State > City without ability to change country. </br> 3) Only Cities: Displays a 1-level city selector without countries or states.','templatic-admin');?></p>	</td>
      </tr>
      <?php
 }
@@ -218,10 +218,10 @@ function location_manage_locations_tab($location_tabs='location_manage_locations
 							$maxmind_geoip='1';
 						}
 						update_option('default_city_set',$_POST['default_city_set']);
-						$message = __('Record updated successfully.',LMADMINDOMAIN);
+						$message = __('Record updated successfully.','templatic-admin');
 				  }
 				  if(isset($_REQUEST['msg']) && $_REQUEST['msg']==1){
-					$message = __('Record updated successfully.',LMADMINDOMAIN);
+					$message = __('Record updated successfully.','templatic-admin');
 				  }
 				 $directory_citylocation_view=get_option('directory_citylocation_view');
 				 $default_city_set=get_option('default_city_set');
@@ -236,7 +236,7 @@ function location_manage_locations_tab($location_tabs='location_manage_locations
 				<?php }
 				if($maxmind_geoip==1):?>
                 <div class="error fade below-h2" id="message" style="padding:5px; font-size:12px;" >
-					<?php echo __('The MaxMind option cannot be saved because you have not placed MaxMind folder under plugins/Tevolution-LocationManager.','LMADMINDOMAIN');?>
+					<?php echo __('The MaxMind option cannot be saved because you have not placed MaxMind folder under plugins/Tevolution-LocationManager.','templatic-admin');?>
                 </div>
                 <?php endif;
 			if(!isset($_REQUEST['action'])){ /* show option only on city listing page*/
@@ -245,28 +245,28 @@ function location_manage_locations_tab($location_tabs='location_manage_locations
 			<table class="form-table manage-locations">
                <?php do_action('location_selection_option');?>
 				<tr class="directory_city_option">
-                    <th><?php _e('Location Tracking Method',LMADMINDOMAIN);?></th>
+                    <th><?php _e('Location Tracking Method','templatic-admin');?></th>
                     <td>
                         <fieldset>
-                            <label for="location_tracking_freegeoip"><input id="location_tracking_freegeoip" type="radio" name="geoip_location_tracking" value="freegeoip" <?php if($geoip_location_tracking=='freegeoip' || $geoip_location_tracking==''){echo 'checked';}?> />&nbsp;<?php echo __('Freegeoip',LMADMINDOMAIN);?></label>
-                            <label for="location_tracking_maxmind"><input id="location_tracking_maxmind" type="radio" name="geoip_location_tracking" value="maxmind" <?php if($geoip_location_tracking=="maxmind"){echo 'checked';}?> />&nbsp;<?php echo __('MaxMind',LMADMINDOMAIN);?></label>
-                            <p class="maxmind_description" <?php if($geoip_location_tracking!='maxmind'):?>style="display:none"<?php endif;?>><?php echo sprintf(__('Download this <a href="%s">zip file</a>, extract it and place it into wp-content/plugins/Tevolution-LocationManager/ folder.',LMADMINDOMAIN),'http://templatic.com/_data/plugins/Maxmind_Location_Geoip.zip');?></p>
+                            <label for="location_tracking_freegeoip"><input id="location_tracking_freegeoip" type="radio" name="geoip_location_tracking" value="freegeoip" <?php if($geoip_location_tracking=='freegeoip' || $geoip_location_tracking==''){echo 'checked';}?> />&nbsp;<?php echo __('Freegeoip','templatic-admin');?></label>
+                            <label for="location_tracking_maxmind"><input id="location_tracking_maxmind" type="radio" name="geoip_location_tracking" value="maxmind" <?php if($geoip_location_tracking=="maxmind"){echo 'checked';}?> />&nbsp;<?php echo __('MaxMind','templatic-admin');?></label>
+                            <p class="maxmind_description" <?php if($geoip_location_tracking!='maxmind'):?>style="display:none"<?php endif;?>><?php echo sprintf(__('Download this <a href="%s">zip file</a>, extract it and place it into wp-content/plugins/Tevolution-LocationManager/ folder.','templatic-admin'),'http://templatic.com/_data/plugins/Maxmind_Location_Geoip.zip');?></p>
                         </fieldset>
                     </td>
                 </tr>
 				<tr class="directory_city">
-					<th><label><?php echo __('Homepage Displays',LMADMINDOMAIN);?></label></th>
+					<th><label><?php echo __('Homepage Displays','templatic-admin');?></label></th>
 					<td><?php $cityinfo = $wpdb->get_results("SELECT cityname FROM $multicity_table where is_default=1");?>
-						<label for="default_city_set"><input type="radio" onclick="change_default_city_set(this);" id="default_city_set" name="default_city_set" value="default_city" <?php if($default_city_set=='default_city'){echo "checked='checked'";}?>/>&nbsp;<span id="default_city_name"><?php echo __('Default City',LMADMINDOMAIN).' ('.$cityinfo[0]->cityname.')';?></span></label>&nbsp;&nbsp;
-                              <label for="location_tracking_set"><input type="radio" onclick="change_default_city_set(this);" id="location_tracking_set" name="default_city_set" value="location_tracking" <?php if($default_city_set=='location_tracking'){echo "checked='checked'";}?>/>&nbsp;<?php echo __('Ask To Show Nearest City',LMADMINDOMAIN);?></label>&nbsp;&nbsp;
-						<label for="nearest_city_set"><input type="radio" onclick="change_default_city_set(this);" id="nearest_city_set" name="default_city_set" value="nearest_city" <?php if($default_city_set=='nearest_city'){echo "checked='checked'";}?>/>&nbsp;<?php echo __('Nearest City',LMADMINDOMAIN);?></label>
-						<p class="description" id="default_city_set_msg" <?php if($default_city_set!='default_city'){ echo "style='display:none'"; } ?>><?php echo __('Displays listings from your default city to visitors once they land on your homepage.',LMADMINDOMAIN);?></p>
-                              <p class="description" id="nearest_city_set_msg" <?php if($default_city_set!='nearest_city'){ echo "style='display:none'"; } ?>><?php echo __('Show listings from the city nearest to the visitors without asking to share their location. Note: Your cities must have atleast one listing added to get tracked as nearest city in front end. ',LMADMINDOMAIN);?><a href="http://templatic.com/docs/tevolution-location-manager/#generalsettings" target="_blank"><?php echo __('Need help?',LMADMINDOMAIN);?></a></p>
-						<p  id="location_tracking" class="description" <?php if($default_city_set!='location_tracking'){ echo "style='display:none'"; } ?>><?php echo __('Asks visitors to share their location and if they agree, they are shown their nearest city. If visitor doesnt share location, listings from the default city will be displayed.',LMADMINDOMAIN);?></p>
+						<label for="default_city_set"><input type="radio" onclick="change_default_city_set(this);" id="default_city_set" name="default_city_set" value="default_city" <?php if($default_city_set=='default_city'){echo "checked='checked'";}?>/>&nbsp;<span id="default_city_name"><?php echo __('Default City','templatic-admin').' ('.$cityinfo[0]->cityname.')';?></span></label>&nbsp;&nbsp;
+                              <label for="location_tracking_set"><input type="radio" onclick="change_default_city_set(this);" id="location_tracking_set" name="default_city_set" value="location_tracking" <?php if($default_city_set=='location_tracking'){echo "checked='checked'";}?>/>&nbsp;<?php echo __('Ask To Show Nearest City','templatic-admin');?></label>&nbsp;&nbsp;
+						<label for="nearest_city_set"><input type="radio" onclick="change_default_city_set(this);" id="nearest_city_set" name="default_city_set" value="nearest_city" <?php if($default_city_set=='nearest_city'){echo "checked='checked'";}?>/>&nbsp;<?php echo __('Nearest City','templatic-admin');?></label>
+						<p class="description" id="default_city_set_msg" <?php if($default_city_set!='default_city'){ echo "style='display:none'"; } ?>><?php echo __('Displays listings from your default city to visitors once they land on your homepage.','templatic-admin');?></p>
+                              <p class="description" id="nearest_city_set_msg" <?php if($default_city_set!='nearest_city'){ echo "style='display:none'"; } ?>><?php echo __('Show listings from the city nearest to the visitors without asking to share their location. Note: Your cities must have atleast one listing added to get tracked as nearest city in front end. ','templatic-admin');?><a href="http://templatic.com/docs/tevolution-location-manager/#generalsettings" target="_blank"><?php echo __('Need help?','templatic-admin');?></a></p>
+						<p  id="location_tracking" class="description" <?php if($default_city_set!='location_tracking'){ echo "style='display:none'"; } ?>><?php echo __('Asks visitors to share their location and if they agree, they are shown their nearest city. If visitor doesnt share location, listings from the default city will be displayed.','templatic-admin');?></p>
 					</td>
 				</tr>
                     <tr class="location_option">
-					<th><label><?php echo __('Activate location management for',LMADMINDOMAIN);?></label></th>
+					<th><label><?php echo __('Activate location management for','templatic-admin');?></label></th>
 					<td>
 					<div class="locaiton_post_type">
 						<fieldset class="location_post_type_option">
@@ -309,17 +309,17 @@ function location_manage_locations_tab($location_tabs='location_manage_locations
 					</div></td>
 				</tr>
                 <tr>
-                	<th><label><?php echo __('Track city visits (city logs)',LMADMINDOMAIN);?></label></th>
+                	<th><label><?php echo __('Track city visits (city logs)','templatic-admin');?></label></th>
                 	<td>
 					<div class="input-switch">
 						<input type="checkbox" id="disable_city_log" name="disable_city_log" value="1" <?php if($disable_city_log==1){echo "checked='checked'";}?>/>
-						<label for="disable_city_log">&nbsp;<?php echo __('Enable',LMADMINDOMAIN);?></label>
+						<label for="disable_city_log">&nbsp;<?php echo __('Enable','templatic-admin');?></label>
 					</div>
-                    <p class="description"><?php echo __('Enabling this option will turn on city logging and show the "City Logs" tab. ',LMADMINDOMAIN);?></p>
+                    <p class="description"><?php echo __('Enabling this option will turn on city logging and show the "City Logs" tab. ','templatic-admin');?></p>
                     </td>
                 </tr>
 				<tr><td colspan="2">
-				<input type="submit" name="location_submit" value="<?php echo __('Save All Changes',LMADMINDOMAIN); ?>" class="button button-primary button-hero"  />
+				<input type="submit" name="location_submit" value="<?php echo __('Save All Changes','templatic-admin'); ?>" class="button button-primary button-hero"  />
 				</td></tr>				
 			</table>
 			</form>
@@ -345,32 +345,32 @@ function manage_countries_locations($location_tabs='countries_manage_locations')
 				?>
                     <div class="wrap">
                          <?php if(isset($_REQUEST['action']) && $_REQUEST['action']=='addnew'): ?>                         
-                              <div class="tevo_sub_title"><?php echo __('Add a Country',LMADMINDOMAIN);?>
-                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=countries_manage_locations';?>" title="<?php echo __('Back to countries list',LMADMINDOMAIN);?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to countries list',LMADMINDOMAIN); ?></a>
+                              <div class="tevo_sub_title"><?php echo __('Add a Country','templatic-admin');?>
+                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=countries_manage_locations';?>" title="<?php echo __('Back to countries list','templatic-admin');?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to countries list','templatic-admin'); ?></a>
                               </div>
                          	<?php add_edit_countries();
 							elseif(isset($_REQUEST['action']) && $_REQUEST['action']=='edit'):?>
-                         	 <div class="tevo_sub_title"><?php echo __('Edit Country',LMADMINDOMAIN);?>
-                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=countries_manage_locations';?>" title="<?php echo __('Back to countries list',LMADMINDOMAIN);?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to countries list',LMADMINDOMAIN); ?></a>
+                         	 <div class="tevo_sub_title"><?php echo __('Edit Country','templatic-admin');?>
+                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=countries_manage_locations';?>" title="<?php echo __('Back to countries list','templatic-admin');?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to countries list','templatic-admin'); ?></a>
                               </div>
                                <?php add_edit_countries();
 							 else:/* Display countries List*/?>
                        		 <!--Display the countries list -->
-                             <div class="tevo_sub_title"><?php echo __('Manage Countries',LMADMINDOMAIN);?>
-                                   <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=countries_manage_locations&action=addnew';?>" title="<?php echo __('Add a field for country',LMADMINDOMAIN);?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Add new country',LMADMINDOMAIN); ?></a>
+                             <div class="tevo_sub_title"><?php echo __('Manage Countries','templatic-admin');?>
+                                   <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=countries_manage_locations&action=addnew';?>" title="<?php echo __('Add a field for country','templatic-admin');?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Add new country','templatic-admin'); ?></a>
                               </div>
-                              <p class="tevolution_desc"><?php echo __('Add and manage your country details from this section. To add new country, use above add link.<br> This section helps your user to select between all the countries available on your site.',LMADMINDOMAIN);?></p>
+                              <p class="tevolution_desc"><?php echo __('Add and manage your country details from this section. To add new country, use above add link.<br> This section helps your user to select between all the countries available on your site.','templatic-admin');?></p>
                                 <?php
 							if(isset($_REQUEST['msgtype']) && $_REQUEST['msgtype']=='add-suc')
-								$message = __('Country created successfully.',LMADMINDOMAIN);
+								$message = __('Country created successfully.','templatic-admin');
 							elseif(isset($_REQUEST['msgtype']) && $_REQUEST['msgtype'] =='edit-suc')
-								$message = __('Country updated successfully.',LMADMINDOMAIN);
+								$message = __('Country updated successfully.','templatic-admin');
 							elseif(isset($_REQUEST['msgtype']) && $_REQUEST['msgtype'] =='dele-suc')
-								$message = __('Country deleted  successfully.',LMADMINDOMAIN);
+								$message = __('Country deleted  successfully.','templatic-admin');
 							elseif(isset($_REQUEST['msgtype']) && $_REQUEST['msgtype'] =='enable-suc')
-								$message = __('Country enable successfully.',LMADMINDOMAIN);
+								$message = __('Country enable successfully.','templatic-admin');
 							elseif(isset($_REQUEST['msgtype']) && $_REQUEST['msgtype'] =='disable-suc')
-								$message = __('Country disable successfully.',LMADMINDOMAIN);
+								$message = __('Country disable successfully.','templatic-admin');
                               if(@$message){?>
                               <div class="updated fade below-h2" id="message" style="padding:5px; font-size:12px;" >
                                 <?php echo $message;?>
@@ -401,28 +401,28 @@ function manage_state_locations($location_tabs='state_manage_locations'){
 				?>
                       <div class="wrap">
                           <?php if(isset($_REQUEST['action']) && $_REQUEST['action']=='addnew'): ?>
-                              <div class="tevo_sub_title"><?php echo __('Add a State',LMADMINDOMAIN);?>	
-                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=state_manage_locations';?>" title="<?php echo __('Back to states list',LMADMINDOMAIN);?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to states list',LMADMINDOMAIN); ?></a>
+                              <div class="tevo_sub_title"><?php echo __('Add a State','templatic-admin');?>	
+                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=state_manage_locations';?>" title="<?php echo __('Back to states list','templatic-admin');?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to states list','templatic-admin'); ?></a>
                               </div>
                          	<?php add_edit_zone();
 						elseif(isset($_REQUEST['action']) && $_REQUEST['action']=='edit'):?>
-                         	<div class="tevo_sub_title"><?php echo __('Edit State',LMADMINDOMAIN);?>
-                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=state_manage_locations';?>" title="<?php echo __('Back to states list',LMADMINDOMAIN);?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to states list',LMADMINDOMAIN); ?></a>
+                         	<div class="tevo_sub_title"><?php echo __('Edit State','templatic-admin');?>
+                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=state_manage_locations';?>" title="<?php echo __('Back to states list','templatic-admin');?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to states list','templatic-admin'); ?></a>
                               </div>
                                <?php add_edit_zone();
 						else:/* Display countries List*/?>
                        		 <!--Display the countries list -->                              
-                              <div class="tevo_sub_title"><?php echo __('Manage States',LMADMINDOMAIN);?>
-                                   <a id="zone_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=state_manage_locations&action=addnew';?>" title="<?php echo __('Add a field for state',LMADMINDOMAIN);?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Add new State',LMADMINDOMAIN); ?></a>
+                              <div class="tevo_sub_title"><?php echo __('Manage States','templatic-admin');?>
+                                   <a id="zone_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=state_manage_locations&action=addnew';?>" title="<?php echo __('Add a field for state','templatic-admin');?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Add new State','templatic-admin'); ?></a>
                               </div>
-                              <p class="tevolution_desc"><?php echo __('Add and manage your state details from this section. You can add new states using above add link.<br> These states will be listed in the dropdown according to the country selected by your user.',LMADMINDOMAIN);?></p>
+                              <p class="tevolution_desc"><?php echo __('Add and manage your state details from this section. You can add new states using above add link.<br> These states will be listed in the dropdown according to the country selected by your user.','templatic-admin');?></p>
                                 <?php
 							if(isset($_REQUEST['msgtype']) && $_REQUEST['msgtype']=='add-suc') 
-								$message = __('State created successfully.',LMADMINDOMAIN);
+								$message = __('State created successfully.','templatic-admin');
 							elseif(isset($_REQUEST['msgtype']) && $_REQUEST['msgtype'] =='edit-suc')
-								$message = __('State updated successfully.',LMADMINDOMAIN);
+								$message = __('State updated successfully.','templatic-admin');
 							elseif(isset($_REQUEST['msgtype']) && $_REQUEST['msgtype'] =='dele-suc')
-								$message = __('State deleted  successfully.',LMADMINDOMAIN);
+								$message = __('State deleted  successfully.','templatic-admin');
                                 
                               if(@$message){?>
                               <div class="updated fade below-h2" id="message" style="padding:5px; font-size:12px;" >
@@ -456,30 +456,30 @@ function manage_city_locations($location_tabs='city_manage_locations'){
 				?>
                       <div class="wrap">
                           <?php if(isset($_REQUEST['action']) && $_REQUEST['action']=='addnew'): ?>                         
-                              <div class="tevo_sub_title"><?php echo __('Add a city',LMADMINDOMAIN);?>
-                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=city_manage_locations';?>" title="<?php echo __('Back to city list',LMADMINDOMAIN);?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to city list',LMADMINDOMAIN); ?></a>
+                              <div class="tevo_sub_title"><?php echo __('Add a city','templatic-admin');?>
+                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=city_manage_locations';?>" title="<?php echo __('Back to city list','templatic-admin');?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to city list','templatic-admin'); ?></a>
                               </div>
-                              <p class="tevolution_desc"><?php echo __('Adequate information will lead to accurate results and map. So, please enter all information accordingly.',LMADMINDOMAIN);?></p>
+                              <p class="tevolution_desc"><?php echo __('Adequate information will lead to accurate results and map. So, please enter all information accordingly.','templatic-admin');?></p>
                          	<?php add_edit_multicity();
 						elseif(isset($_REQUEST['action']) && $_REQUEST['action']=='edit'):?>
-                         	<div class="tevo_sub_title"><?php echo __('Edit city',LMADMINDOMAIN);?>
-                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=city_manage_locations';?>" title="<?php echo __('Back to city list',LMADMINDOMAIN);?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to city list',LMADMINDOMAIN); ?></a>
+                         	<div class="tevo_sub_title"><?php echo __('Edit city','templatic-admin');?>
+                              <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=city_manage_locations';?>" title="<?php echo __('Back to city list','templatic-admin');?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Back to city list','templatic-admin'); ?></a>
                               </div>
-                              <p class="tevolution_desc"><?php echo __('For accurate results, please enter the adequate information.',LMADMINDOMAIN);?></p>
+                              <p class="tevolution_desc"><?php echo __('For accurate results, please enter the adequate information.','templatic-admin');?></p>
                                <?php add_edit_multicity();
 						else:/* Display countries List*/?>
                        		 <!--Display the countries list -->                              
-                              <div class="tevo_sub_title"><?php echo __('Manage Cities',LMADMINDOMAIN);?>
-                                   <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=city_manage_locations&action=addnew';?>" title="<?php echo __('Add a field for country',LMADMINDOMAIN);?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Add new city',LMADMINDOMAIN); ?></a>
+                              <div class="tevo_sub_title"><?php echo __('Manage Cities','templatic-admin');?>
+                                   <a id="country_list" href="<?php echo site_url().'/wp-admin/admin.php?page=location_settings&location_tabs=city_manage_locations&action=addnew';?>" title="<?php echo __('Add a field for country','templatic-admin');?>" name="btnviewlisting" class="add-new-h2" /><?php echo __('Add new city','templatic-admin'); ?></a>
                               </div>
-                              <p class="tevolution_desc"><?php echo __('<b>Important note:</b> Cities will appear in front-end city selection box only after you add some listings/events to them. <br/><br/>',LMADMINDOMAIN);?></p>
+                              <p class="tevolution_desc"><?php echo __('<b>Important note:</b> Cities will appear in front-end city selection box only after you add some listings/events to them. <br/><br/>','templatic-admin');?></p>
                                 <?php
 							if(isset($_REQUEST['msgtype']) && $_REQUEST['msgtype']=='add-suc')
-								$message = __('City created successfully. Until you do not create any post for this particular city, it will not appear in a navigation strip for selection.',LMADMINDOMAIN);
+								$message = __('City created successfully. Until you do not create any post for this particular city, it will not appear in a navigation strip for selection.','templatic-admin');
 							elseif(isset($_REQUEST['msgtype']) && $_REQUEST['msgtype'] =='edit-suc')
-								$message = __('City updated successfully.',LMADMINDOMAIN);
+								$message = __('City updated successfully.','templatic-admin');
 							elseif(isset($_REQUEST['msgtype']) && $_REQUEST['msgtype'] =='dele-suc')
-								$message = __('City deleted  successfully.',LMADMINDOMAIN);
+								$message = __('City deleted  successfully.','templatic-admin');
                                ?>
                          <form name="frm_city" id="frm_city" action="" method="post" >
                          	<input type="hidden" value="<?php echo wp_create_nonce('delete_city');?>" name="_wpnonce"  />                         	
@@ -552,12 +552,12 @@ class wp_list_manage_countries extends Tmpl_WP_List_Table
 	function get_columns()
 	{
 		$columns = array('cb' => '<input type="checkbox" />',
-					'title' =>  __('Country Name',LMADMINDOMAIN),
-					'flag' =>  __('Country Flag',LMADMINDOMAIN),
-					'ISO_Code2' =>  __('ISO Code2',LMADMINDOMAIN),
-					'ISO_Code3' => __('ISO Code3',LMADMINDOMAIN),
-					'is_enable' => __('Active',LMADMINDOMAIN),
-					'is_browse' => __('Browse',LMADMINDOMAIN),
+					'title' =>  __('Country Name','templatic-admin'),
+					'flag' =>  __('Country Flag','templatic-admin'),
+					'ISO_Code2' =>  __('ISO Code2','templatic-admin'),
+					'ISO_Code3' => __('ISO Code3','templatic-admin'),
+					'is_enable' => __('Active','templatic-admin'),
+					'is_browse' => __('Browse','templatic-admin'),
 				);
 		return $columns;
 	}
@@ -696,7 +696,7 @@ class wp_list_manage_states extends Tmpl_WP_List_Table
 								  'title'		 => '<a href="'.$url.'">'.$resobj->zone_name.'</a>',
 								  'zone_code'	 => $resobj->zone_code,
 								  'country_name'=> $resobj->country_name,
-								  'is_browse'    => '<a href="'.$url.'">'.__('Browse Cities',LMADMINDOMAIN).'</a>',
+								  'is_browse'    => '<a href="'.$url.'">'.__('Browse Cities','templatic-admin').'</a>',
 								);
 			endforeach;
 		}
@@ -706,10 +706,10 @@ class wp_list_manage_states extends Tmpl_WP_List_Table
 	function get_columns(){
 		$columns = array(
 			'cb' => '<input type="checkbox" />',
-			'title' =>  __('State Name',LMADMINDOMAIN),
-			'zone_code' =>  __('State Code',LMADMINDOMAIN),
-			'country_name' => __('Country Name',LMADMINDOMAIN),
-			'is_browse' => __('Browse',LMADMINDOMAIN)
+			'title' =>  __('State Name','templatic-admin'),
+			'zone_code' =>  __('State Code','templatic-admin'),
+			'country_name' => __('Country Name','templatic-admin'),
+			'is_browse' => __('Browse','templatic-admin')
 			);
 		return $columns;
 	}
@@ -856,15 +856,15 @@ class wp_list_manage_multicitiy extends Tmpl_WP_List_Table
 		{ 
 			 foreach($multicitiyinfo as $resobj) :
 			 	if($resobj->map_type=='ROADMAP')
-					$map_type=__('Road Map',LDOMAIN);
+					$map_type=__('Road Map','templatic');
 				elseif($resobj->map_type=='TERRAIN')
-					$map_type=__('Terrain Map',LDOMAIN);
+					$map_type=__('Terrain Map','templatic');
 				elseif($resobj->map_type=='SATELLITE')
-					$map_type=__('Satellite Map',LDOMAIN);
+					$map_type=__('Satellite Map','templatic');
 				elseif($resobj->map_type=='HYBRID')
-					$map_type=__('Hybrid Map',LDOMAIN);
+					$map_type=__('Hybrid Map','templatic');
 				elseif($resobj->map_type=='streetview')
-					$map_type=__('Street View Map',LDOMAIN);					
+					$map_type=__('Street View Map','templatic');					
 					
 				
 				if (function_exists('icl_register_string')) {
@@ -881,7 +881,7 @@ class wp_list_manage_multicitiy extends Tmpl_WP_List_Table
 
 				}
 				if($resobj->is_default==1){
-					$cityname='<span style="font-weight:bold;" id="city_default_'.$resobj->city_id.'">'.$resobj->cityname.'</span>&nbsp;<span style="color:green;" class="default_city" id="set_default_city_'.$resobj->city_id.'">'.__('Default City',LMADMINDOMAIN).'</span>';
+					$cityname='<span style="font-weight:bold;" id="city_default_'.$resobj->city_id.'">'.$resobj->cityname.'</span>&nbsp;<span style="color:green;" class="default_city" id="set_default_city_'.$resobj->city_id.'">'.__('Default City','templatic-admin').'</span>';
 				}else{
 					$cityname= '<span id="city_default_'.$resobj->city_id.'">'.$resobj->cityname.'</span>';
 				}
@@ -906,12 +906,12 @@ class wp_list_manage_multicitiy extends Tmpl_WP_List_Table
 	{
 		$columns = array(	
 			'cb'             => '<input type="checkbox" />',			
-			'title'          => __('City',LMADMINDOMAIN),			
-			'country_name'   => __('Located In',LMADMINDOMAIN),
-			'map_type'       => __('Map Type',LMADMINDOMAIN),
-			'city_post_type' => __('Post Type',LMADMINDOMAIN),
-			'message'        => __('Message',LMADMINDOMAIN),
-			'scaling_factor' => __('Scaling Factor',LMADMINDOMAIN),			
+			'title'          => __('City','templatic-admin'),			
+			'country_name'   => __('Located In','templatic-admin'),
+			'map_type'       => __('Map Type','templatic-admin'),
+			'city_post_type' => __('Post Type','templatic-admin'),
+			'message'        => __('Message','templatic-admin'),
+			'scaling_factor' => __('Scaling Factor','templatic-admin'),			
 			);
 		return $columns;
 	}
@@ -978,12 +978,12 @@ class wp_list_manage_multicitiy extends Tmpl_WP_List_Table
 	function column_title($item)
 	{	
 		$onclick="onClick=set_default_city(this,'".$item['ID']."')";
-		$delete_url="<a href='?page=".$_REQUEST['page']."&action=delete&cf[]=".$item['ID']."&location_tabs=city_manage_locations&_wpnonce=".wp_create_nonce('bulk-tevolution_page_location_settings')."'>".__('Delete',LMADMINDOMAIN)."</a>";
+		$delete_url="<a href='?page=".$_REQUEST['page']."&action=delete&cf[]=".$item['ID']."&location_tabs=city_manage_locations&_wpnonce=".wp_create_nonce('bulk-tevolution_page_location_settings')."'>".__('Delete','templatic-admin')."</a>";
 		$actions = array(
-				'city_id' => __('City ID:',LMADMINDOMAIN).' '.$item['ID'],
-				'edit' => sprintf('<a href="?page=%s&action=%s&cf=%s&%s&paged=%s">'.__('Edit',LMADMINDOMAIN).'</a>',$_REQUEST['page'],'edit',$item['ID'],'location_tabs=city_manage_locations',$_REQUEST['paged']),
+				'city_id' => __('City ID:','templatic-admin').' '.$item['ID'],
+				'edit' => sprintf('<a href="?page=%s&action=%s&cf=%s&%s&paged=%s">'.__('Edit','templatic-admin').'</a>',$_REQUEST['page'],'edit',$item['ID'],'location_tabs=city_manage_locations',$_REQUEST['paged']),
 				'delete' => $delete_url,
-				'set_default' => sprintf('<a href="javascript:void(0);" id="default_city_%s" class="%s" %s>'.__('Set Default',LMADMINDOMAIN).'</a>',$item['ID'],@$item['city_name'],$onclick)
+				'set_default' => sprintf('<a href="javascript:void(0);" id="default_city_%s" class="%s" %s>'.__('Set Default','templatic-admin').'</a>',$item['ID'],@$item['city_name'],$onclick)
 			);
 		
 		return sprintf('%1$s %2$s', stripslashes($item['title']), $this->row_actions($actions , $always_visible = false) );
@@ -1054,40 +1054,40 @@ function add_edit_countries(){
      	<table class="form-table" width="70%" cellspacing="1" cellpadding="4" border="0">
           	<tbody>
                	<tr>
-                    	<th><?php echo __('Country Name',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('Country Name','templatic-admin');?></th>
                          <td>
                          	<input type="text" name="country_name" value="<?php echo ($countryinfo[0]->country_name)? $countryinfo[0]->country_name: '';?>" />
-                         	<p class="description"><?php echo __('Write the country name.',LMADMINDOMAIN);?></p>
+                         	<p class="description"><?php echo __('Write the country name.','templatic-admin');?></p>
                          </td>
                     </tr>
                     <tr>
-                    	<th><?php echo __('ISO Code 2',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('ISO Code 2','templatic-admin');?></th>
                          <td>
                          	<input type="text" name="iso_code2" value="<?php echo ($countryinfo[0]->iso_code_2)? $countryinfo[0]->iso_code_2: '';?>" />
-                         	<p class="description"><?php echo __('Write the two letter country code here <br>(e.g. "US" for United States of America. You can find these codes from',LMADMINDOMAIN).' <a href ="http://en.wikipedia.org/wiki/ISO_3166-1#Current_codes" target="_blank"> '.__('here',LMADMINDOMAIN).' </a> )';?></p>
+                         	<p class="description"><?php echo __('Write the two letter country code here <br>(e.g. "US" for United States of America. You can find these codes from','templatic-admin').' <a href ="http://en.wikipedia.org/wiki/ISO_3166-1#Current_codes" target="_blank"> '.__('here','templatic-admin').' </a> )';?></p>
                          </td>
                     </tr>
                     <tr>
-                    	<th><?php echo __('ISO Code 3',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('ISO Code 3','templatic-admin');?></th>
                          <td>
                          	<input type="text" name="iso_code3" value="<?php echo ($countryinfo[0]->iso_code_3)? $countryinfo[0]->iso_code_3: '';?>" />
-                         	<p class="description"><?php echo __('Write the three letter country code here <br>(e.g. "US" for United States of America. You can find these codes from',LMADMINDOMAIN).' <a href ="http://en.wikipedia.org/wiki/ISO_3166-1#Current_codes" target="_blank"> '.__('here',LMADMINDOMAIN).' </a> )';?></p>
+                         	<p class="description"><?php echo __('Write the three letter country code here <br>(e.g. "US" for United States of America. You can find these codes from','templatic-admin').' <a href ="http://en.wikipedia.org/wiki/ISO_3166-1#Current_codes" target="_blank"> '.__('here','templatic-admin').' </a> )';?></p>
                          </td>
                     </tr>                   
                      <tr>
-                    	<th><?php echo __('Country flag',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('Country flag','templatic-admin');?></th>
                          <td>
                          	<input id="country_flag_icon" type="text" size="60" name="country_flag" value="<?php echo ($countryinfo[0]->country_flg)?$countryinfo[0]->country_flg:'';?>" />	
-                             <?php echo __('Or',LMADMINDOMAIN);?>
+                             <?php echo __('Or','templatic-admin');?>
                              <a class="button upload_button" title="Add country flag icon" id="country_flag_icon" data-editor="country_flag_icon" href="#">
-                             <span class="wp-media-buttons-icon"></span><?php echo __('Browse',LMADMINDOMAIN);?>	</a>				
+                             <span class="wp-media-buttons-icon"></span><?php echo __('Browse','templatic-admin');?>	</a>				
                               
-                              <p class="description"><?php echo __('Upload flag image for above mentioned country. It will appear on your site along with the country name.',LMADMINDOMAIN);?></p>
+                              <p class="description"><?php echo __('Upload flag image for above mentioned country. It will appear on your site along with the country name.','templatic-admin');?></p>
                          </td>
                     </tr>
                     <tr id="save_coupon">
                          <td colspan="2">
-                         	<input id="save" class="button button-primary button-hero" type="submit" value="<?php echo __('Save all changes',LMADMINDOMAIN); ?>"  name="<?php echo $submit;?>">
+                         	<input id="save" class="button button-primary button-hero" type="submit" value="<?php echo __('Save all changes','templatic-admin'); ?>"  name="<?php echo $submit;?>">
                          </td>
                     </tr>
                </tbody>
@@ -1150,21 +1150,21 @@ function add_edit_zone(){
                          </td>
                     </tr>
                     <tr>
-                    	<th><?php echo __('State Name',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('State Name','templatic-admin');?></th>
                          <td><input type="text" name="zone_name" value="<?php echo ($zoneinfo[0]->zone_name)? $zoneinfo[0]->zone_name: '';?>" />
-                          <p class="description"><?php echo __('Write the state name that falls in the above selected country',LMADMINDOMAIN);?></p>
+                          <p class="description"><?php echo __('Write the state name that falls in the above selected country','templatic-admin');?></p>
                           </td>
                     </tr>
                     <tr>
-                    	<th><?php echo __('State Code',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('State Code','templatic-admin');?></th>
                          <td><input type="text" name="zone_code" value="<?php echo ($zoneinfo[0]->zone_code)? $zoneinfo[0]->zone_code: '';?>" />
-                        <p class="description"><?php echo __('Write the zone code of the above mentioned state',LMADMINDOMAIN);?></p>
+                        <p class="description"><?php echo __('Write the zone code of the above mentioned state','templatic-admin');?></p>
                          </td>
                     </tr>
                     
                     <tr id="save_coupon">
                          <td colspan="2">
-                         	<input id="save" class="button button-primary button-hero" type="submit" value="<?php echo __('Save all changes',LMADMINDOMAIN); ?>"  name="<?php echo $submit;?>">
+                         	<input id="save" class="button button-primary button-hero" type="submit" value="<?php echo __('Save all changes','templatic-admin'); ?>"  name="<?php echo $submit;?>">
                          </td>
                     </tr>
                </tbody>
@@ -1193,7 +1193,7 @@ function add_edit_multicity(){
                     $city_slug_change = 1;
                     $city_slug = sanitize_title($_POST['city_name']).'_'.rand(10,999);
                 }else{
-                    $city_slug = $get_db_city[0]->city_slug;
+                    $city_slug = sanitize_title($get_db_city[0]->city_slug);
                 }
                 
                 $wpdb->update($multicity_table , array('country_id' => $_POST['country_id'],'zones_id'=>$_POST['zones_id'],'cityname'=> stripslashes($_POST['city_name']),'city_slug'=>$city_slug,'lat'=>$_POST['geo_latitude'],'lng'=>$_POST['geo_longitude'],'scall_factor'=>$_POST['scaling_factor'],'is_zoom_home'=>$_POST['set_zooming_opt'],'map_type'=>$_POST['map_type'],'post_type'=>$city_post_type,'categories'=>$categories,'message'=>stripslashes($_POST['city_message']),'color'=>$_POST['background_city_colour'],'images'=>$_POST['city_image'],'header_color'=>$_POST['header_background_city_colour'],'header_image'=>$_POST['header_city_image'],'cat_scall_factor'=>$_POST['cat_scaling_factor'],'is_zoom_cat'=>$_POST['cat_set_zooming_opt']), array('city_id' => $_POST['city_id']) );
@@ -1280,21 +1280,21 @@ function add_edit_multicity(){
                          </td>
                     </tr>
                      <tr>
-                    	<th><?php echo __('Map type',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('Map type','templatic-admin');?></th>
                          <td>
-                              <input type="radio" id="roadmap" name="map_type" value="ROADMAP" <?php if( @$cityinfo[0]->map_type == 'ROADMAP' || @$cityinfo[0]->map_type == ''){?>checked="checked"<?php }?> /> <label for="roadmap"> <?php echo __('  Road Map',LMADMINDOMAIN);?></label>
-                              	<input type="radio" id="terrain" name="map_type" <?php if( @$cityinfo[0]->map_type == 'TERRAIN'){?> checked="checked"<?php }?> value="TERRAIN" /> <label for="terrain"><?php echo __('Terrain Map',LMADMINDOMAIN);?></label> 
+                              <input type="radio" id="roadmap" name="map_type" value="ROADMAP" <?php if( @$cityinfo[0]->map_type == 'ROADMAP' || @$cityinfo[0]->map_type == ''){?>checked="checked"<?php }?> /> <label for="roadmap"> <?php echo __('  Road Map','templatic-admin');?></label>
+                              	<input type="radio" id="terrain" name="map_type" <?php if( @$cityinfo[0]->map_type == 'TERRAIN'){?> checked="checked"<?php }?> value="TERRAIN" /> <label for="terrain"><?php echo __('Terrain Map','templatic-admin');?></label> 
            &nbsp;
-                              	<input type="radio" id="satellite" name="map_type" <?php if( @$cityinfo[0]->map_type == 'SATELLITE'){?> checked="checked"<?php }?> value="SATELLITE" /> <label for="satellite"><?php echo __('Satellite Map',LMADMINDOMAIN);?></label> 
+                              	<input type="radio" id="satellite" name="map_type" <?php if( @$cityinfo[0]->map_type == 'SATELLITE'){?> checked="checked"<?php }?> value="SATELLITE" /> <label for="satellite"><?php echo __('Satellite Map','templatic-admin');?></label> 
                               &nbsp;
-                              	<input type="radio" id="hybrid" name="map_type" <?php if( @$cityinfo[0]->map_type == 'HYBRID'){?> checked="checked"<?php }?> value="HYBRID" /> <label for="hybrid"><?php echo __('Hybrid  Map',LMADMINDOMAIN);?></label>   
+                              	<input type="radio" id="hybrid" name="map_type" <?php if( @$cityinfo[0]->map_type == 'HYBRID'){?> checked="checked"<?php }?> value="HYBRID" /> <label for="hybrid"><?php echo __('Hybrid  Map','templatic-admin');?></label>   
                               
-                         	<p class="description"><?php echo __('Select any of the above type for your map',LMADMINDOMAIN); ?></p>
+                         	<p class="description"><?php echo __('Select any of the above type for your map','templatic-admin'); ?></p>
                          	
                          </td>
                     </tr>
                     <tr>
-                    	<th><?php echo __('Map scaling factor',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('Map scaling factor','templatic-admin');?></th>
                          <td>
 							<select name="scaling_factor">
 								<?php for($sf=1; $sf < 20 ; $sf++){ ?>
@@ -1304,11 +1304,11 @@ function add_edit_multicity(){
 									<option value="<?php echo $sf; ?>" <?php echo $sel; ?>><?php echo $sf; ?></option>
 								<?php } ?>							
 							</select>
-                         	<p class="description"><?php echo __('Define the zoom level of the map here.<br/> Its Min. value is 1 and Max. Value is 19. The recommended level is 13',LMADMINDOMAIN);?></p>
+                         	<p class="description"><?php echo __('Define the zoom level of the map here.<br/> Its Min. value is 1 and Max. Value is 19. The recommended level is 13','templatic-admin');?></p>
                          </td>
                     </tr>
                     <tr id="admin_city_name">
-                    	<th><?php echo __('City Name',LMADMINDOMAIN);?><span class="required">*</span></th>
+                    	<th><?php echo __('City Name','templatic-admin');?><span class="required">*</span></th>
                          <td>
                          	<div style="width:25%; float:left;">
                          	<input type="text"  id="address" class="pt_input_text" name="city_name" value="<?php echo ( @$cityinfo[0]->cityname)? stripslashes($cityinfo[0]->cityname): '';?>" />
@@ -1330,35 +1330,35 @@ function add_edit_multicity(){
                          </td>
                     </tr>
                      <tr>
-                    	<th><?php echo __('City latitude',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('City latitude','templatic-admin');?></th>
                         <td><input type="text"  onblur="changeMap();" class="textfield" id="geo_latitude"  name="geo_latitude" value="<?php echo ( @$cityinfo[0]->lat)? $cityinfo[0]->lat: '';?>" /></td>
                     </tr>
                     <tr>
-                    	<th><?php echo __('City longitude',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('City longitude','templatic-admin');?></th>
                         <td><input type="text" onblur="changeMap();" class="textfield" id="geo_longitude" name="geo_longitude" value="<?php echo ( @$cityinfo[0]->lng)? $cityinfo[0]->lng: '';?>" /></td>
                     </tr>                     
                     <tr>
-                    	<th><?php echo __('Home Page Map display',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('Home Page Map display','templatic-admin');?></th>
                          <td>
                               
-                              <input type="radio" id="set_zooming_opt" name="set_zooming_opt" value="0" <?php if( @$cityinfo[0]->is_zoom_home == '0' || @$cityinfo[0]->is_zoom_home == ''){?>checked="checked"<?php }?> /> <label for="set_zooming_opt"> <?php echo __('According to Map Scaling factor',LMADMINDOMAIN);?></label>
+                              <input type="radio" id="set_zooming_opt" name="set_zooming_opt" value="0" <?php if( @$cityinfo[0]->is_zoom_home == '0' || @$cityinfo[0]->is_zoom_home == ''){?>checked="checked"<?php }?> /> <label for="set_zooming_opt"> <?php echo __('According to Map Scaling factor','templatic-admin');?></label>
                               &nbsp;
-                              	<input type="radio" id="set_zooming_opt1" name="set_zooming_opt" <?php if( @$cityinfo[0]->is_zoom_home == '1'){?> checked="checked"<?php }?> value="1" /> <label for="set_zooming_opt1"><?php echo __('Fit all available listings',LMADMINDOMAIN);?></label>                              	
-                         	<p class="description"><?php echo __('Select whether you want to display map as per Map scaling factor you have set above or adjust the scaling factor<br/> automatically so that all available listings appear on the map.',LMADMINDOMAIN);?></p>
+                              	<input type="radio" id="set_zooming_opt1" name="set_zooming_opt" <?php if( @$cityinfo[0]->is_zoom_home == '1'){?> checked="checked"<?php }?> value="1" /> <label for="set_zooming_opt1"><?php echo __('Fit all available listings','templatic-admin');?></label>                              	
+                         	<p class="description"><?php echo __('Select whether you want to display map as per Map scaling factor you have set above or adjust the scaling factor<br/> automatically so that all available listings appear on the map.','templatic-admin');?></p>
                          </td>
                     </tr>
                     <tr>
-                    	<th><?php echo __('Category/Archive page Map display',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('Category/Archive page Map display','templatic-admin');?></th>
                          <td>
                               
-                              <input type="radio" id="cat_set_zooming_opt" name="cat_set_zooming_opt" value="0" <?php if( @$cityinfo[0]->is_zoom_cat == '0' || @$cityinfo[0]->is_zoom_cat == ''){?>checked="checked"<?php }?> /> <label for="cat_set_zooming_opt"> <?php echo __('According to Map Scaling factor',LMADMINDOMAIN);?></label>
+                              <input type="radio" id="cat_set_zooming_opt" name="cat_set_zooming_opt" value="0" <?php if( @$cityinfo[0]->is_zoom_cat == '0' || @$cityinfo[0]->is_zoom_cat == ''){?>checked="checked"<?php }?> /> <label for="cat_set_zooming_opt"> <?php echo __('According to Map Scaling factor','templatic-admin');?></label>
                               &nbsp;
-                              	<input type="radio" id="cate_set_zooming_opt1" name="cat_set_zooming_opt" <?php if( @$cityinfo[0]->is_zoom_cat == '1'){?> checked="checked"<?php }?> value="1" /> <label for="cate_set_zooming_opt1"><?php echo __('Fit all available listings',LMADMINDOMAIN);?></label>                              	
-                         	<p class="description"><?php echo __('Select whether you want to display map as per Map scaling factor you have set above or adjust the scaling factor<br/> automatically so that all available listings appear on the map.',LMADMINDOMAIN);?></p>
+                              	<input type="radio" id="cate_set_zooming_opt1" name="cat_set_zooming_opt" <?php if( @$cityinfo[0]->is_zoom_cat == '1'){?> checked="checked"<?php }?> value="1" /> <label for="cate_set_zooming_opt1"><?php echo __('Fit all available listings','templatic-admin');?></label>                              	
+                         	<p class="description"><?php echo __('Select whether you want to display map as per Map scaling factor you have set above or adjust the scaling factor<br/> automatically so that all available listings appear on the map.','templatic-admin');?></p>
                          </td>
                     </tr>
                     <tr id="category_map_scaling_factor" <?php if( @$cityinfo[0]->is_zoom_cat == '1'){?> style="display:none" <?php }?>>
-                    	<th><?php echo __('Category/Archive page Map scaling factor',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('Category/Archive page Map scaling factor','templatic-admin');?></th>
                          <td>
 							<select name="cat_scaling_factor">
 								<?php for($sf=1; $sf < 20 ; $sf++){ ?>
@@ -1368,11 +1368,11 @@ function add_edit_multicity(){
 									<option value="<?php echo $sf; ?>" <?php echo $sel; ?>><?php echo $sf; ?></option>
 								<?php } ?>							
 							</select>
-                         	<p class="description"><?php echo __('Define the zoom level of the map here.<br/> Its Min. value is 1 and Max. Value is 19. The recommended level is 13',LMADMINDOMAIN);?></p>
+                         	<p class="description"><?php echo __('Define the zoom level of the map here.<br/> Its Min. value is 1 and Max. Value is 19. The recommended level is 13','templatic-admin');?></p>
                          </td>
                     </tr>                    
                     <tr id="admin_post_type">
-                    	<th><?php echo __('Post Type',LMADMINDOMAIN);?><span class="required">*</span></th>
+                    	<th><?php echo __('Post Type','templatic-admin');?><span class="required">*</span></th>
                            <td>
                          	<?php						
 						$location_post_type=implode(',',get_option('location_post_type'));
@@ -1390,43 +1390,61 @@ function add_edit_multicity(){
                                    </div>
                                    
 						<?php } endforeach;?>
-                              <p class="description"><?php echo __('Selected post type will be displayed on home page map. <br> <b>Note:</b> Make sure about its category selection in the below given &quot;Categories&quot; option',LMADMINDOMAIN);?></p>
+                              <p class="description"><?php echo __('Selected post type will be displayed on home page map. <br> <b>Note:</b> Make sure about its category selection in the below given &quot;Categories&quot; option','templatic-admin');?></p>
                          </td>
                     </tr>               
 				</tr>
                     <tr id="admin_post_type">
-                    	<th><?php echo __('Categories',LMADMINDOMAIN);?><span class="required">*</span></th>
+                    	<th><?php echo __('Categories','templatic-admin');?><span class="required">*</span></th>
                          <td>
 						 <div class="element wp-tab-panel" id="field_category" style="height:120px;overflow-y: scroll; margin-bottom:5px;">
 							 <?php 
 							 	$post_types = get_option("templatic_custom_post");
+								
+								$location_post_type = get_option('location_post_type');
+								
+								$location_posts1 = array();
+								
+								
+								/* get post types which are choosed as loaction wise */
+								foreach($location_post_type as $location_posts){
+									$location_posts1 = explode(',',$location_posts);
+									$location_posts1[] = $location_posts1[0];
+								}
+								
 								$categories=( @$cityinfo[0]->categories!='')? $cityinfo[0]->categories:'';								
 								$c=0;
+								
+								/* get selected posts types' categories */
 								if(!empty($city_post_type)){
 								foreach($post_types as $key=>$post_type):
-									if(in_array($key,$city_post_type)){
-										if($c == 0){
-											echo get_location_category_checklist($key,$categories,'','select_all');
-										}else{ 
-											echo get_location_category_checklist($key,$categories,'','');
+									if(in_array($key,$location_posts1)){
+										if(in_array($key,$city_post_type)){
+											if($c == 0){
+												echo get_location_category_checklist($key,$categories,'','select_all');
+											}else{ 
+												echo get_location_category_checklist($key,$categories,'','');
+											}
+											$c++;
 										}
-										$c++;
 									}
 								endforeach;
 								}else{
-									foreach($post_types as $key=>$post_type):									
-										if($c == 0){
-											echo get_location_category_checklist($key,$categories,'','select_all');
-										}else{ 
-											echo get_location_category_checklist($key,$categories,'','');
-										}
-										$c++;									
+									foreach($post_types as $key=>$post_type):
+										if(in_array($key,$location_posts1)){
+											if($c == 0){
+												echo get_location_category_checklist($key,$categories,'','select_all');
+											}else{ 
+												echo get_location_category_checklist($key,$categories,'','');
+											}
+											$c++;
+										}	
 									endforeach;
 								}
 							?>  
 						  </div>
 						  <span id='process' style='display:none;'><i class="fa fa-circle-o-notch fa-spin"></i></span>
-						  <p class="description"><?php echo __('Select the categories for which this field should appear in on the place or event submission form.',LMADMINDOMAIN);?></p>
+						  <p class="description"><?php echo __('Select the categories for which this field should appear in on the place or event submission form.','templatic-admin');?></p>
                          </td>
                     </tr>
 					<script type="text/javascript" async>
@@ -1444,14 +1462,14 @@ function add_edit_multicity(){
 					});
 					</script>
                     <tr>
-                    	<th><?php echo __('City Message',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('City Message','templatic-admin');?></th>
                          <td>
                          	<textarea name="city_message" cols="60" rows="5"><?php echo ( @$cityinfo[0]->message)?$cityinfo[0]->message:'';?></textarea>
-                              <p class="description"><?php echo __('Write a description of the city that you would like to display on your site.',LMADMINDOMAIN);?></p>
+                              <p class="description"><?php echo __('Write a description of the city that you would like to display on your site.','templatic-admin');?></p>
                          </td>
                     </tr>
                     <tr>
-                    	<th><?php echo __('Background Color',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('Background Color','templatic-admin');?></th>
                          <td>   
                          	<script type="text/javascript">
 							/*BEING City background color picker */
@@ -1463,20 +1481,20 @@ function add_edit_multicity(){
                               <img style="position:relative;vertical-align:middle;" src="<?php echo TEVOLUTION_LOCATION_URL; ?>images/Color_block.png" />
                               <div id="background_city_colour"  name="city_color" style="display:none" ></div>
                               <div class="clearfix"></div>
-                              <p class="description"><?php echo __('choose a background color for this city. <br> <b>Tip:</b>You can define a color that represents the particular city to add an advantage to recognize the cities on your site.',LMADMINDOMAIN);?></p>
+                              <p class="description"><?php echo __('choose a background color for this city. <br> <b>Tip:</b>You can define a color that represents the particular city to add an advantage to recognize the cities on your site.','templatic-admin');?></p>
                          </td>
                     </tr>
                     <!-- Set city back ground image html -->
                     <tr>
-                    	<th><?php echo __('Background Image',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('Background Image','templatic-admin');?></th>
                          <td>                          	
-							  <input id="city_upload_icon" type="text" size="60"  name="city_image" value="<?php echo ( @$cityinfo[0]->images)?$cityinfo[0]->images:'';?>" />	<a data-id="city_upload_icon" id="Background Image" type="submit" class="upload_file_button button"><?php  echo __('Browse',LMADMINDOMAIN);?></a>   
-                              <p class="description"><?php echo __('Upload image to display it as a background image for this city. Ideal width size for it is <b>1900 pixels</b>.',LMADMINDOMAIN);?></p>                              
+							  <input id="city_upload_icon" type="text" size="60"  name="city_image" value="<?php echo ( @$cityinfo[0]->images)?$cityinfo[0]->images:'';?>" />	<a data-id="city_upload_icon" id="Background Image" type="submit" class="upload_file_button button"><?php  echo __('Browse','templatic-admin');?></a>   
+                              <p class="description"><?php echo __('Upload image to display it as a background image for this city. Ideal width size for it is <b>1900 pixels</b>.','templatic-admin');?></p>                              
                          </td>
                     </tr>
                     
                     <tr>
-                    	<th><?php echo __('Header Background Color',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('Header Background Color','templatic-admin');?></th>
                          <td>   
 						<script  type="text/javascript" async >
 							/*BEING City background color picker */
@@ -1488,21 +1506,21 @@ function add_edit_multicity(){
                               <img style="position:relative;vertical-align:middle;" src="<?php echo TEVOLUTION_LOCATION_URL; ?>images/Color_block.png" />
                               <div id="header_background_city_colour"  name="header_city_color" style="display:none" ></div>
                               <div class="clearfix"></div>
-                              <p class="description"><?php echo __('choose a header background color for this city. <br> <b>Tip:</b>You can define a color that represents the particular city to add an advantage to recognize the cities on your site.',LMADMINDOMAIN);?></p>
+                              <p class="description"><?php echo __('choose a header background color for this city. <br> <b>Tip:</b>You can define a color that represents the particular city to add an advantage to recognize the cities on your site.','templatic-admin');?></p>
                          </td>
                     </tr>
                     <!-- Set city header image html -->
                     <tr>
-                    	<th><?php echo __('Header Upload Image',LMADMINDOMAIN);?></th>
+                    	<th><?php echo __('Header Upload Image','templatic-admin');?></th>
                          <td>                          	
-                             <input id="header_city_upload_icon" type="text" size="60" name="header_city_image" value="<?php echo ( @$cityinfo[0]->header_image)?$cityinfo[0]->header_image:'';?>" />	<a data-id="header_city_upload_icon" id="Header Image" type="submit" class="upload_file_button button"><?php  echo __('Browse',LMADMINDOMAIN);?></a>
+                             <input id="header_city_upload_icon" type="text" size="60" name="header_city_image" value="<?php echo ( @$cityinfo[0]->header_image)?$cityinfo[0]->header_image:'';?>" />	<a data-id="header_city_upload_icon" id="Header Image" type="submit" class="upload_file_button button"><?php  echo __('Browse','templatic-admin');?></a>
                        
-                              <p class="description"><?php echo __('Upload image to display it as a header background image for this city.Ideal width size for it is 1240 pixels and keep the height upto 240px.',LMADMINDOMAIN);?></p>                              
+                              <p class="description"><?php echo __('Upload image to display it as a header background image for this city.Ideal width size for it is 1240 pixels and keep the height upto 240px.','templatic-admin');?></p>                              
                          </td>
                     </tr>
                     <tr id="save_coupon">
                          <td colspan="2">
-                         	<input id="save" class="button button-primary button-hero" type="submit" value="<?php echo __('Save all changes',LMADMINDOMAIN); ?>"  name="<?php echo $submit;?>">
+                         	<input id="save" class="button button-primary button-hero" type="submit" value="<?php echo __('Save all changes','templatic-admin'); ?>"  name="<?php echo $submit;?>">
                          </td>
                     </tr>
                </tbody>
@@ -1558,7 +1576,7 @@ function location_fill_states_cmb()
 	else{
 		$zonesinfo = $wpdb->get_results($wpdb->prepare("SELECT distinct z.zones_id, z.* FROM $zones_table z,$country_table c where z.country_id=c.country_id AND c.is_enable=%d AND z.country_id =%d order by zone_name ASC",1,$_REQUEST['country_id']));	
 	}	
-	$zones_ontion.='<option value="">'.__('Select State',LDOMAIN).'</option>';
+	$zones_ontion.='<option value="">'.__('Select State','templatic').'</option>';
 	
 	if($zonesinfo):		
 		foreach($zonesinfo as $zone):
@@ -1571,11 +1589,11 @@ function location_fill_states_cmb()
 			$zones_ontion.='<option value="'.$zone->zones_id.'"  '.$selected.'>'.($zone_name).'</option>';
 		endforeach;
 	else:
-		$zones_ontion='<option value="">'.__('States not available',LDOMAIN).'</option>';
+		$zones_ontion='<option value="">'.__('States not available','templatic').'</option>';
 	endif;
 	
 	if(isset($_REQUEST['header']) && $_REQUEST['header']==1){
-		$zones_ontion.='++<option value="">'.__('Select City',LDOMAIN).'</option>';	
+		$zones_ontion.='++<option value="">'.__('Select City','templatic').'</option>';	
 	}
 	echo $zones_ontion;
 	exit;
@@ -1611,7 +1629,7 @@ function location_fill_cities_cmb()
 		$cityinfo = $wpdb->get_results($wpdb->prepare("SELECT * FROM $multicity_table where zones_id =%d order by cityname  ASC",$_REQUEST['state_id']));
 	}	
 	
-	$city_ontion.='<option value="">'.__('Select City',LDOMAIN).'</option>';
+	$city_ontion.='<option value="">'.__('Select City','templatic').'</option>';
 	if($cityinfo):		
 		foreach($cityinfo as $city):
 		   $cityname=$city->cityname;		   
@@ -1623,7 +1641,7 @@ function location_fill_cities_cmb()
 		   $city_ontion.='<option value="'.$city->city_id.'" '.$selected.'>'.$cityname.'</option>';
 		endforeach;
 	else:
-		$city_ontion='<option value="">'.__('City not available',LDOMAIN).'</option>';
+		$city_ontion='<option value="">'.__('City not available','templatic').'</option>';
 	endif;
 	echo $city_ontion;
 	exit;
@@ -1650,7 +1668,7 @@ function location_fill_multicity_cmb(){
 			$city_ontion.='<option value="'.$city->city_id.'" >'.$city->cityname.'</option>';
 		endforeach;
 	else:
-		$city_ontion='<option value="">'.__('City not available',LDOMAIN).'</option>';
+		$city_ontion='<option value="">'.__('City not available','templatic').'</option>';
 	endif;
 	echo $city_ontion;
 	exit;
@@ -1690,7 +1708,7 @@ function get_location_category_checklist($post_type,$pid,$mod='',$select_all='')
 		if($select_all == 'select_all')
 		{
 		?>
-		<li><label for="selectall"><input type="checkbox" name="category[]" id="selectall" value="all" class="checkbox" <?php if( @$_REQUEST['mod']=='custom_fields'){ ?> onclick="displaychk_frm();"<?php  } elseif( @$_REQUEST['mod']=='price'){ ?> onclick="displaychk_price();"<?php  }else{ ?>onclick="displaychk_frm();"<?php } ?> <?php if( @$pid[0]){ if(in_array('all',$pid)){ echo "checked=checked"; } }else{  }?>/>&nbsp;<?php echo __("Select All",LMADMINDOMAIN); ?></label></li>
+		<li><label for="selectall"><input type="checkbox" name="category[]" id="selectall" value="all" class="checkbox" <?php if( @$_REQUEST['mod']=='custom_fields'){ ?> onclick="displaychk_frm();"<?php  } elseif( @$_REQUEST['mod']=='price'){ ?> onclick="displaychk_price();"<?php  }else{ ?>onclick="displaychk_frm();"<?php } ?> <?php if( @$pid[0]){ if(in_array('all',$pid)){ echo "checked=checked"; } }else{  }?>/>&nbsp;<?php echo __("Select All",'templatic-admin'); ?></label></li>
 		<?php
 		}
 		foreach ($wpcategories as $wpcat)
@@ -1698,7 +1716,7 @@ function get_location_category_checklist($post_type,$pid,$mod='',$select_all='')
 			if($counter ==0){ 
 				$tname = $taxonomy_details[$post_taxonomy]['label']; 
 				if($post_taxonomy =='category' || $post_taxonomy ==''): ?>
-				<li><label style="font-weight:bold;"><?php _e('Categories',LMADMINDOMAIN); ?></label></li>
+				<li><label style="font-weight:bold;"><?php _e('Categories','templatic-admin'); ?></label></li>
 				<?php else:?>
 						<li><label style="font-weight:bold;"><?php echo $tname; ?></label></li>
 			<?php 	
@@ -1790,7 +1808,7 @@ function get_location_category_checklist($post_type,$pid,$mod='',$select_all='')
 				}		
 }
 	echo "</ul>"; } else{
-			sprintf(__('There is no categories in %s',LMADMINDOMAIN),$post_type);
+			sprintf(__('There is no categories in %s','templatic-admin'),$post_type);
 	}
 }
 /*
