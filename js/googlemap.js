@@ -317,7 +317,7 @@ function googlemap_listMapMarkers1(input){
 			ClustererMarkers = markers.concat(ClustererMarkers);
 		}
 		if(clustering != 1){
-			mClusterer = new MarkerClusterer(map, ClustererMarkers,{maxZoom: 0,gridSize: 10,batchSizeIE: 100,styles: null,infoOnClick: 1,infoOnClickZoom: 18,});			
+			mClusterer = new MarkerClusterer(map, ClustererMarkers,{maxZoom: 0,gridSize: 10,batchSizeIE: 100,styles: null,infoOnClick: 1,infoOnClickZoom: 18,imagePath: 'wp-content/plugins/Tevolution-LocationManager/images/m'});			
 			
 			    google.maps.event.addListener(mClusterer, 'clusterclick', function(cluster) {
 					/* Convert lat/long from cluster object to a usable MVCObject */
